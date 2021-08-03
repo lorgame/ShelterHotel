@@ -1,0 +1,315 @@
+@media (min-width: 320px) and (max-width: 768px) {
+  .header {
+    .innerContainer {
+      height: 85px;
+      margin: 0 20px 0 15px;
+      grid-template-columns: 0.1fr 1fr 0.1fr;
+      align-content: center;
+      justify-content: center;
+      .logoHeader {
+        order: 2;
+        width: 140px;
+        height: 45px;
+      }
+      .menu {
+        display: none;
+      }
+      .itemPhone {
+        display: none;
+      }
+      .language {
+        width: 50px !important;
+        margin-bottom: 20px;
+        .itemPhone {
+          display: none;
+        }
+        .itemLanguage {
+          order: 2;
+          font-size: 14px;
+        }
+      }
+      .mobileMenuButton {
+        cursor: pointer;
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        order: 3;
+        width: 27px;
+        height: 19px;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .header {
+    .innerContainer {
+      grid-template-columns: 0.49fr 1.5fr 0.17fr;
+      .itemPhone {
+        display: none;
+      }
+      .language {
+        justify-self: flex-end;
+        margin-right: 11px;
+      }
+    }
+  }
+}
+.header {
+  width: 1920px;
+  max-width: 100%;
+  .innerContainer {
+    margin: 37px 0 39px 0;
+    display: grid;
+    grid-template-columns: 0.49fr 1.39fr 0.31fr 0.20fr;
+    .menu {
+      margin-right: 5%;
+      margin-left: 5%;
+      max-width: 760px;
+      padding-left: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .item {
+        display: inline-block;
+        opacity: 0.6;
+        color: #222A3A;
+        transition: 0.5s;
+        border-bottom: 1px solid white;
+        font-size: 16px;
+        &:hover {
+          opacity: 1;
+          border-bottom: 1px solid #222A3A;
+          transition: 0.5s;
+        }
+        &.active {
+          color: #222A3A;
+          border-bottom: 1px solid #222A3A;
+          opacity: 1 !important;
+        }
+      }
+    }
+    .itemPhone {
+      display: flex;
+      align-self: center;
+      justify-self: center;
+      width: 160px;
+      transition: 0.5s;
+      font-weight: 400;
+      font-size: 16px;
+      color: #222A3A;
+      &:hover {
+        transition: 0.5s;
+        text-shadow: 1px 0 #222A3A;
+      }
+    }
+    .language {
+      padding-left: 0;
+      display: flex;
+      justify-content: space-between;
+      align-self: center;
+      width: 55px !important;
+      margin-left: 10px;
+      .itemLanguage {
+        display: flex;
+        align-self: center;
+        .link {
+          color: #222A3A;
+          transition: 0.5s;
+          &:hover {
+            transition: 0.5s;
+            text-shadow: 1px 0 #222A3A;
+          }
+        }
+        &.active {
+          text-shadow: 1px 0 #222A3A;
+        }
+        &.hidden {
+          display: none;
+        }
+      }
+    }
+    .mobileMenuButton {
+      display: none;
+    }
+  }
+}
+
+@media (min-height: 320px) and (max-height: 400px) {
+  .menu-xs {
+    .logoMenuBlock {
+      .logoMenu {
+        height: 40px;
+        width: 20px;
+        margin-top: 10px;
+      }
+    }
+    .mobileMenuList {
+      .menuItem {
+        &:last-child {
+          margin-bottom: -12px;
+        }
+        .linkItem {
+          margin-top: -12px;
+          margin-bottom: 12px;
+        }
+      }
+      .active {
+        border-top: 1px solid black;
+        opacity: 1 !important;
+      }
+    }
+    .messengerBlockFirst {
+      .messengerList {
+        margin: 0;
+      }
+    }
+    .messengerBlockSecond {
+      height: 24px;
+    }
+  }
+}
+.menu-xs {
+  display: none;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.75fr 1fr 3.35fr 0.85fr 0.8fr 1.35fr;
+  background-color: white;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+  .closeMenuBLock {
+    display: flex;
+    justify-content: flex-end;
+    color: #222A3A;
+    .borderCloseButton {
+      display: flex;
+      justify-content: center;
+      align-self: flex-end;
+      width: 24px;
+      height: 24px;
+      margin-right: 5%;
+      transition: 0.5s;
+      border-radius: 50%;
+      border: 2px solid white;
+      &:hover {
+        border-radius: 50%;
+        border: 2px solid #222A3A;
+        transition: 0.5s;
+      }
+      .closeMenuButton {
+        display: flex;
+        align-self: center;
+        width: 12px;
+        height: 12px;
+      }
+    }
+  }
+  .logoMenuBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .logoMenu {
+      width: 45px;
+      height: 70px;
+      display: block;
+      margin-top: 20px;
+    }
+  }
+  .mobileMenuList {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 0;
+    .menuItem {
+      display: flex;
+      justify-content: center;
+      margin: 0 40px;
+      opacity: 0.65;
+      border-top: 1px solid white;
+      transition: 0.5s;
+      &:hover {
+        border-top: 1px solid #222A3A;
+        opacity: 1 !important;
+        transition: 0.5s;
+      }
+      .linkItem {
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        width: max-content;
+        border-left: 20px solid white;
+        border-right: 20px solid white;
+        font-size: 16px;
+        margin-top: -12px;
+        margin-bottom: 12px;
+        color: #222A3A;
+      }
+    }
+    .active {
+      color: #222A3A;
+      border-top: 1px solid #222A3A;
+      opacity: 1 !important;
+    }
+  }
+  .messengerBlockFirst {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    .messengerList {
+      display: flex;
+      justify-content: space-between;
+      width: 155px;
+      padding-left: 0;
+      .messengerItem {
+        transition: 0.5s;
+        &:hover {
+          text-shadow: 0px 0px 1px #222A3A;
+          transition: 0.5s;
+        }
+        .messengerLink {
+          color: #222A3A;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .phoneNumberBlock {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    .phoneNumber {
+      color: #222A3A;
+      width: 160px;
+      font-size: 16px;
+      transition: 0.5s;
+      &:hover {
+        text-shadow: 0px 0px 1px #222A3A;
+        transition: 0.5s;
+      }
+    }
+  }
+  .messengerBlockSecond {
+    display: flex;
+    justify-content: center;
+    .messengerList {
+      display: flex;
+      justify-content: space-between;
+      width: 215px;
+      padding-left: 0;
+      .messengerItem {
+        transition: 0.5s;
+        &:hover {
+          text-shadow: 0px 0px 1px #222A3A;
+          transition: 0.5s;
+        }
+        .messengerLink {
+          color: #222A3A;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

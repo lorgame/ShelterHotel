@@ -1,0 +1,114 @@
+@media (min-width: 320px) and (max-width: 768px) {
+  .footer {
+    margin-bottom: 0px;
+    .footerBlock {
+      margin: 35px 0 0 0;
+      width: 100%;
+      .logoFooter {
+        margin-left: 30px;
+      }
+      .info {
+        margin: 10px 30px;
+        height: 190px;
+        margin-top: 5px;
+        display: grid;
+        grid-template-columns: 1fr; 
+        justify-content: flex-start;
+        .addresses {
+          order: 1;
+        }
+        .linkPhone {
+          order: 0;
+          justify-content: flex-start;
+        }
+        .blockMessenger {
+          order: 2;
+          .messengers {
+            padding-left: 0;
+            justify-content: space-between;
+            width: 190px;
+          }
+        }
+      }
+      .createdBlock {
+        margin-top: 0;
+        width: 100%;
+        height: 55px;
+        background-color: #F6F6F6;
+        display: flex;
+        align-items: center;
+        .created {
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  .footerBlock {
+    margin: 50px 15px 0 15px;
+    width: 1070px;
+    height: 125px;
+    .info {
+      margin-top: 5px;
+      display: grid;
+      grid-template-columns: 1fr 0.5fr 0.5fr; 
+      justify-content: space-between;
+      .addresses {
+        font-size: 16px;
+      }
+      .linkPhone {
+        display: flex;
+        justify-content: center;
+        transition: 0.5s;
+        .phoneNumberFooter {
+        font-size: 16px;
+        }
+        &:hover {
+          text-shadow: 0px 0px 1px #222A3A;
+          transition: 0.5s;
+        }
+      }
+      .blockMessenger {
+        .messengers {
+          display: flex;
+          justify-content: space-between;
+          margin: 0;
+          width: 260px;
+          .item {
+            .link {
+              transition: 0.5s;
+              font-size: 16px;
+              &:hover {
+                text-shadow: 0px 0px 1px #222A3A;
+              transition: 0.5s;
+              }
+            }
+          }
+        }
+      }
+    }
+    .createdBlock {
+      margin-top: 40px;
+      .created {
+        font-size: 16px;
+        .linkCreated {
+          cursor: pointer;
+          &:hover {
+            .nameCreated {
+              transform: scale(1.11);
+              transition: 0.3s;
+              color: rgb(85, 85, 85);
+            } 
+          }
+          .nameCreated {
+            font-weight: 600;
+            transition: 0.3s;
+          }
+        }
+      }
+    }
+  }
+}

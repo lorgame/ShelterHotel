@@ -1,0 +1,2173 @@
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+.mainPageSite {
+  margin-bottom: 85px;
+  .selectItemForJs {
+    justify-content: flex-start !important;
+    font-size: 16px !important;
+  }
+  .showSelectItemForJs {
+    padding-bottom: 2px;
+    padding-right: 20px;
+    background: no-repeat center right url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMS42OTgiIGhlaWdodD0iNi4zNDgiIHZpZXdCb3g9IjAgMCAxMS42OTggNi4zNDgiPg0KICA8ZyBpZD0i0KHQs9GA0YPQv9C/0LjRgNC+0LLQsNGC0YxfMTYiIGRhdGEtbmFtZT0i0KHQs9GA0YPQv9C/0LjRgNC+0LLQsNGC0YwgMTYiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC01ODAuNTMgLTkyOC40ODIpIj4NCiAgICA8cGF0aCBpZD0i0JrQvtC90YLRg9GAXzMiIGRhdGEtbmFtZT0i0JrQvtC90YLRg9GAIDMiIGQ9Ik01OTEuODc0LDkyOC44MzVsLTUuNDk1LDUuNDk1aDBsLTUuNDk1LTUuNDk1IiBmaWxsPSJub25lIiBzdHJva2U9IiMyMjJhM2EiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIxIi8+DQogIDwvZz4NCjwvc3ZnPg0K');
+  }
+  .showDateArrowForJs {
+    font-size: 16px !important;
+    padding-bottom: 2px;
+    padding-right: 20px;
+    background: no-repeat center right url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMS42OTgiIGhlaWdodD0iNi4zNDgiIHZpZXdCb3g9IjAgMCAxMS42OTggNi4zNDgiPg0KICA8ZyBpZD0i0KHQs9GA0YPQv9C/0LjRgNC+0LLQsNGC0YxfMTYiIGRhdGEtbmFtZT0i0KHQs9GA0YPQv9C/0LjRgNC+0LLQsNGC0YwgMTYiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC01ODAuNTMgLTkyOC40ODIpIj4NCiAgICA8cGF0aCBpZD0i0JrQvtC90YLRg9GAXzMiIGRhdGEtbmFtZT0i0JrQvtC90YLRg9GAIDMiIGQ9Ik01OTEuODc0LDkyOC44MzVsLTUuNDk1LDUuNDk1aDBsLTUuNDk1LTUuNDk1IiBmaWxsPSJub25lIiBzdHJva2U9IiMyMjJhM2EiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIxIi8+DQogIDwvZz4NCjwvc3ZnPg0K');
+  }
+  .showDateArrowMobileForJs {
+    padding-bottom: 2px;
+    padding-right: 0px !important;
+    width: 55px;
+    background: no-repeat center right url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2Ljc3OCIgaGVpZ2h0PSIzLjg4OSIgdmlld0JveD0iMCAwIDYuNzc4IDMuODg5Ij4NCiAgPGcgaWQ9ItCh0LPRgNGD0L/Qv9C40YDQvtCy0LDRgtGMXzE3NSIgZGF0YS1uYW1lPSLQodCz0YDRg9C/0L/QuNGA0L7QstCw0YLRjCAxNzUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00MDAuNjU2IC05MjguNDgyKSI+DQogICAgPHBhdGggaWQ9ItCa0L7QvdGC0YPRgF8yIiBkYXRhLW5hbWU9ItCa0L7QvdGC0YPRgCAyIiBkPSJNNDA3LjA4LDkyOC44MzVsLTMuMDM1LDMuMDM1aDBsLTMuMDM1LTMuMDM1IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwKSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjODE4MjgyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS13aWR0aD0iMSIvPg0KICA8L2c+DQo8L3N2Zz4NCg==');
+  }
+  
+  @media (min-width: 320px) and (max-width: 475px) {
+    .booking {
+      grid-template-columns: 1fr;
+      margin-bottom: 40px;
+      .blockFirst {
+        .videoBlockMobile {
+          display: block;
+          width: 100%;
+          position: relative;
+          .video {
+            width: inherit;
+            height: inherit;
+            object-fit: inherit;
+          }
+          .videoHover {
+            transition: 0.5s;
+            opacity: 0;
+            margin-bottom: -3px;
+            &:hover {
+              opacity: 1;
+            }
+            .videoOpacity {
+              background-color: white;
+              position: absolute;
+              opacity: 0.4;
+              bottom: 0;
+              width: 100%;
+              max-height: 100%;
+            }
+          }
+        }
+        .mainPicture{
+          display: none;
+        }
+        .blockDownRow {
+          grid-template-columns: 1.5fr 1fr;
+          .tourForm {
+            .blockComponentsForm {
+              grid-template-columns: 1fr 1fr;
+              .blockClassRoom {
+                display: none;
+              }
+              .blockSleepingPlace {
+                display: none;
+              }
+            }
+            .showElementBooking {
+              top: 70px;
+              height: 210px;
+              .showCalendarArrival {
+                width: 100%;
+                margin-left: 0;
+                #calendar1 thead tr:nth-child(1) td {
+                  padding-bottom: 0;
+                }
+                #calendar1 thead tr:nth-child(1) td:nth-child(3) {
+                  right: 15px !important;
+                  position: absolute !important;
+                }
+                #calendar1 thead tr:nth-child(1) td:nth-child(2) {
+                  left: calc(50%/2);
+                }
+                #calendar1 tbody td {
+                  padding: 3px 0;
+                  border-right: 3px solid white;
+                  border-left: 3px solid white;
+                }
+              }
+              .showCalendarDeparture {
+                width: 100%;
+                margin-left: 0;
+                #calendar2 thead tr:nth-child(1) td {
+                  padding-bottom: 0;
+                }
+                #calendar2 thead tr:nth-child(1) td:nth-child(3) {
+                  right: 15px !important;
+                  position: absolute !important;
+                }
+                #calendar2 thead tr:nth-child(1) td:nth-child(2) {
+                  left: calc(50%/2);
+                }
+                #calendar2 tbody td {
+                  padding: 3px 0;
+                  border-right: 3px solid white;
+                  border-left: 3px solid white;
+                }
+              }
+            }
+          }
+          .button {
+            height: 60px;
+            font-size: 14px;
+          }
+        }
+      }
+      .blockSecond {
+        display: none;
+      }
+      .blockThird {
+        display: none;
+      }
+    }
+  }
+  @media (min-width: 320px) and (max-width: 768px) {
+    .booking {
+      grid-template-columns: 1fr;
+      margin-bottom: 40px;
+      .blockFirst {
+        .blockDownRow {
+          .tourForm {
+            .blockComponentsForm {
+              .blockTour {
+                padding-top: 5px;
+                padding-bottom: 5px;
+              }
+            }
+          }
+        }
+        .videoBlockMobile {
+          display: block;
+          width: 100%;
+          position: relative;
+          .video {
+            width: inherit;
+            height: inherit;
+            object-fit: inherit;
+          }
+          .videoHover {
+            transition: 0.5s;
+            opacity: 1;
+            margin-bottom: -3px;
+            &:hover {
+              opacity: 1 !important;
+            }
+            .videoOpacity {
+              background-color: white;
+              position: absolute;
+              opacity: 0.4;
+              bottom: 0;
+              width: 100%;
+              max-height: 100%;
+            }
+          }
+        }
+        .mainPicture{
+          display: none;
+        }
+        .blockDownRow {
+          grid-template-columns: 1.5fr 1fr;
+          .tourForm {
+            .blockComponentsForm {
+              grid-template-columns: 1fr 1fr;
+              .blockClassRoom {
+                display: none;
+              }
+              .blockSleepingPlace {
+                display: none;
+              }
+            }
+            .showElementBooking {
+              height: 240px;
+              top: 70px;
+              .showCalendarArrival {
+                #calendar1 {
+                  position: relative;
+                }
+                #calendar1 thead tr:nth-child(1) td {
+                  padding-bottom: 0;
+                }
+                #calendar1 thead tr:nth-child(1) td:nth-child(3) {
+                  right: 15px;
+                  position: absolute;
+                }
+                #calendar1 thead tr:nth-child(1) td:nth-child(2) {
+                  left: calc(50% - 109px/2);
+                }
+              }
+              .showCalendarDeparture {
+                #calendar2 {
+                  position: relative;
+                }
+                #calendar2 thead tr:nth-child(1) td {
+                  padding-bottom: 0;
+                }
+                #calendar2 thead tr:nth-child(1) td:nth-child(3) {
+                  right: 15px;
+                  position: absolute;
+                }
+                #calendar2 thead tr:nth-child(1) td:nth-child(2) {
+                  left: calc(50% - 109px/2);
+                }
+              }
+            }
+          }
+          .button {
+            height: 60px;
+            font-size: 14px;
+          }
+        }
+      }
+      .blockSecond {
+        display: none;
+      }
+      .blockThird {
+        display: none;
+      }
+    }
+  }
+  @media (min-width: 769px) and (max-width: 1175px) {
+    .booking {
+      display: grid;
+      grid-template-columns: 3fr 1px 0.5fr;
+      margin-bottom: 85px;
+      .blockSecond {
+        .videoBlock {
+          display: none;
+        }
+      }
+    }
+  }
+  .booking {
+    display: grid;
+    grid-template-columns: 3fr 500px 0.5fr;
+    margin-bottom: 85px;
+    .blockFirst {
+      .videoBlockMobile {
+        display: none;
+      }
+      .mainPicture{
+        background-image: url("/../assets/img/mainPhoto.jpg");
+        max-width: 100%;
+        height: 710px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      .blockDownRow {
+        display: grid;
+        grid-template-columns: 3fr 0.9fr;
+        justify-content: space-between;
+        .tourForm {
+          padding: 0 10px;
+          position: relative;
+          max-width: 100%;
+          display: flex;
+          justify-content: center;
+          .title {
+            font-size: 14px;
+            color: #818282;
+          }
+          .blockComponentsForm {
+            width: 100%;
+            justify-items: center;
+            align-self: center;
+            max-width: 680px;
+            display: grid;
+            grid-template-columns: minmax(max-content, 1fr) 1fr 1fr 1fr;
+            grid-column-gap: 10px;
+            .blockTour{
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              height: 55px;
+            }
+            .blockClassRoom {
+              .showSelectItem {
+                color: #222A3A;
+                font-size: 16px;
+                cursor: pointer;
+              }
+              .showSelect {
+                border: 1px solid black;
+                box-shadow: 0 0 3px rgba(0,0,0,0.5);
+                position: absolute;
+                top: 95px;
+                max-width: 100%;
+                height: max-content;
+                display: none;
+                z-index: 1;
+                background-color: white;
+                .selectList {
+                  margin: 0;
+                  max-width: 100%;
+                  height: 100%;
+                  padding-left: 0;
+                  display: flex;
+                  flex-direction: column;
+                  .selectItem {
+                    padding: 0 5px;
+                    display: flex;
+                    justify-content: flex-start !important;
+                    font-size: 16px !important;
+                    align-items: center;
+                    transition: 1s;
+                    height: 30px;
+                    cursor: pointer;
+                    &:hover {
+                      background-color: #e9e9e9;
+                      transition: 1s;
+                    }
+                  }
+                }
+              }
+            }
+            .blockArrival {
+              .showDateArrival {
+                cursor: pointer;
+                color: #222A3A;
+              }
+            }
+            .blockDeparture {
+              .showDateDeparture {
+                cursor: pointer;
+                color: #222A3A;
+              }
+            }
+            .blockSleepingPlace {
+              width: 95px;
+              max-width: 100%;          
+              .sleepingPlace {
+                display: flex;
+                justify-content: space-between;
+                .checkNumberBed {
+                  opacity: 0;
+                  position: absolute;
+                  width: 1px;
+                  height: 18px;
+                }
+                .numberBed {
+                  margin-bottom: 6px;
+                  cursor: pointer;
+                  font-size: 16px;
+                  color: #222A3A;
+                  opacity: 0.5;
+                  transition: 0.3s;
+                  &:hover {
+                    opacity: 1;
+                    transition: 0.3s;
+                  }
+                }
+                .checkNumberBed:checked {
+                  + .numberBed {
+                    opacity: 1;
+                  }
+                }
+              }
+            }
+          }
+          .showElementBooking {
+            position: absolute;
+            top: 130px;
+            width: 100%;
+            height: 283px;
+            background-color: white;
+            z-index: 1;
+            display: none;
+            
+            .showCalendarArrival {
+              display: none;
+              margin-left: calc((100% - 285px)/2);
+              width: 100px;
+              max-width: 100%;
+              height: 240px;
+              .today {
+                transition: 0.2s;
+                border-radius: 50%;
+                background-color: #222A3A;
+                color: white !important;
+                border-radius: 50%;
+                transition: 0.2s;
+                cursor: pointer;
+              }
+              #calendar1 {
+                width: 100%;
+                font: monospace;
+                line-height: 1.2em;
+                font-size: 15px;
+                text-align: center;
+              }
+              #calendar1 thead tr:nth-child(1) {
+                border-bottom: 50px solid white !important;
+              }
+              #calendar1 thead tr:last-child {
+                color: #818282
+              }
+              #calendar1 thead tr:nth-child(1) td:nth-child(2) {
+                color: #818282;
+                position: absolute;
+              }
+              #calendar1 thead tr:nth-child(1) {
+                height: 25px;
+                color: #818282;
+              }
+              #calendar1 thead tr:nth-child(1) td {
+                padding-bottom: 25px;
+              }
+              #calendar1 thead tr:nth-child(1) td:nth-child(1):hover, #calendar1 thead tr:nth-child(1) td:nth-child(3):hover {
+                cursor: pointer;
+              }
+              #calendar1 tbody td {
+                color: #818282;
+                transition: 0.2s;
+                border-radius: 50%;
+                height: 20px;
+                padding: 5px;
+                border-right: 5px solid white;
+                border-left: 5px solid white;
+              }
+              .hover:hover {
+                background-color: #222A3A;
+                color: white !important;
+                border-radius: 50%;
+                transition: 0.2s;
+                cursor: pointer;
+              }
+              .selectedDate {
+                background-color: #222A3A;
+                color: white !important;
+                border-radius: 50%;
+                transition: 0.2s;
+                cursor: pointer;
+              }
+            }
+            .showCalendarDeparture {
+              display: none;
+              margin-left: calc((100% - 285px)/2);
+              width: 100px;
+              max-width: 100%;
+              height: 240px;
+              .today {
+                transition: 0.2s;
+                border-radius: 50%;
+                background-color: #222A3A;
+                color: white !important;
+                border-radius: 50%;
+                transition: 0.2s;
+                cursor: pointer;
+              }
+              .dateCalendar {
+                transition: 0.2s;
+                border-radius: 50%;
+                background-color: #222A3A;
+                color: white !important;
+                border-radius: 50%;
+                transition: 0.2s;
+                cursor: pointer;
+              }
+              #calendar2 {
+                width: 100%;
+                font: monospace;
+                line-height: 1.2em;
+                font-size: 15px;
+                text-align: center;
+              }
+              #calendar2 thead tr:nth-child(1) {
+                border-bottom: 50px solid white !important;
+              }
+              #calendar2 thead tr:last-child {
+                color: #818282
+              }
+              #calendar2 thead tr:nth-child(1) td:nth-child(2) {
+                color: #818282;
+                position: absolute;
+              }
+              #calendar2 thead tr:nth-child(1) {
+                height: 25px;
+                color: #818282;
+              }
+              #calendar2 thead tr:nth-child(1) td {
+                padding-bottom: 25px;
+              }
+              #calendar2 thead tr:nth-child(1) td:nth-child(1):hover, #calendar2 thead tr:nth-child(1) td:nth-child(3):hover {
+                cursor: pointer;
+              }
+              #calendar2 tbody td {
+                color: #818282;
+                height: 20px;
+                padding: 5px;
+                border-right: 5px solid white;
+                border-left: 5px solid white;
+                transition: 0.2s;
+                border-radius: 50%;
+              }
+              .hover:hover {
+                background-color: #222A3A;
+                color: white !important;
+                border-radius: 50%;
+                transition: 0.2s;
+                cursor: pointer;
+              }
+              .selectedDate {
+                background-color: #222A3A;
+                color: white !important;
+                border-radius: 50%;
+                transition: 0.2s;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+        .button {
+          padding: 0 15px;
+          width: 100%;
+          height: 130px;
+          background-color: #222A3A;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          transition: 0.5s;
+          &:hover {
+            background-color: #384155;
+            opacity: 1;
+            transition: 0.5s;
+          }
+          .linkButton {
+            color: white;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .blockSecond {
+      display: flex;
+      flex-direction: column;
+      align-self: flex-end;
+      .linkViewRooms {
+        position: absolute;
+        bottom: 300px;
+        right: 0;
+        left: 44.5%;
+        max-width: 100%;
+        .viewRooms {
+          width: 100%;
+          float: right;
+          height: 334px;
+          background-color: white;
+          &:hover {
+            .blockText {
+              .text {
+                margin-left: 20px;
+                transition: 1s;
+              }
+              .title {
+                transition: 1s;
+                transform: scale(1.05);
+              }
+            }
+          }
+          .blockText {
+            height: 195px;
+            margin: 7.3%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .title {
+              font-size: 50px;
+              font-weight: 700;
+              line-height: 60px;
+              transition: 1s;
+              color: #222A3A;
+            }
+            .text {
+              width: max-content;
+              padding-right: 55px;
+              font-size: 28px;
+              transition: 1s;
+              color: #222A3A;
+            }
+          }
+        }
+      }
+      .videoBlock {
+        width: 100%;
+        height: 300px;
+        position: relative;
+        .video {
+          width: inherit;
+          height: inherit;
+          object-fit: inherit;
+        }
+        .videoHover {
+          transition: 0.5s;
+          opacity: 1;
+          &:hover {
+            opacity: 1 !important;
+            .videoOpacity {
+              opacity: 0.4;
+              transition: 0.5s;
+            }
+          }
+          .videoOpacity {
+            transition: 0.5s;
+            background-color: white;
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+    .blockThird {
+      max-width: 100%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      .messengers {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 150px;
+        padding-left: 0;
+        margin-bottom: 35px;
+        .item {
+          transform: rotate(-90deg);
+          .link {
+            transition: 0.5s;
+            font-size: 16px;
+            color: #222A3A;
+            &:hover {
+              text-shadow: 0px 0px 1px #222A3A;
+              transition: 0.5s;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 320px) and (max-width: 400px) {
+    .classNumbers {
+      .linkBlock:nth-child(3) {
+        .informBlock {
+          .blockText {
+            .blockInfo {
+              .numberTitle {
+                margin-top: -35px;
+                width: 90%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 320px) and (max-width: 768px) {
+    .classNumbers {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      .linkBlock {
+        height: 150px;
+        .numberBlock {
+          height: inherit;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center left;
+        }
+        .hoverBlock {
+          .opacityWhite {
+            width: calc(100% - 65px);
+            left: 0;
+          }
+          .informBlock {
+            height: 100%;
+            justify-content: flex-start;
+            align-content: flex-start;
+            .numberProposition {
+              font-size: 19px;
+              color: white;
+              top: 20px;
+              right: calc((65px - 27px)/2);
+              left: unset;
+            }
+            .blockText {
+              margin: 0 0 30px 25px;
+              height: 50px;
+              .blockInfo {
+                .numberText {
+                  display: none;
+                }
+              }
+              .numberPrice {
+                display: block;
+              }
+            }
+          }
+          &:hover {
+            .opacityWhite {
+              position: absolute;
+              margin-left: -100%;
+              opacity: 1;
+            }
+            .numberProposition {
+              text-shadow: none !important;
+              margin-right: -50px;
+            }
+            .blockText {
+              opacity: 1;
+              margin-left: -100%;
+            }
+          }
+        }
+        .numberBlockFirst {
+          background-image: url("/../assets/img/standartMobile.jpg");
+        }
+        .numberBlockSecond {
+          background-image: url("/../assets/img/improvedMobile.jpg");
+        }
+        .numberBlockThird {
+          background-image: url("/../assets/img/doubleLuxe.jpg");
+        }
+        .numberBlockFourth {
+          background-image: url("/../assets/img/economy.jpg");
+        }
+        .numberBlockFifth {
+          background-image: url("/../assets/img/family.jpg");
+        }
+      }
+    }
+  }
+  @media (min-width: 1200px) and (max-width: 1445px) {
+    .classNumbers {
+      .linkBlock {
+        .hoverBlock {
+          .informBlock {
+            .blockText {
+              padding: 0 10px;
+              height: 140px;
+              .blockInfo {
+                margin-bottom: 45px;
+                .numberTitle {
+                  font-size: 16px;
+                  display: block;
+                }
+              }
+              .numberPrice {
+                position: absolute;
+                bottom: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 1000px) and (max-width: 1199px) {
+    .classNumbers {
+      .linkBlock {
+        .hoverBlock {
+          .informBlock {
+            .blockText {
+              padding: 0 10px;
+              height: 170px;
+              .blockInfo {
+                margin-bottom: 45px;
+                .numberTitle {
+                  font-size: 16px;
+                  display: block;
+                }
+              }
+              .numberPrice {
+                position: absolute;
+                bottom: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 769px) and (max-width: 999px) {
+    .classNumbers {
+      .linkBlock {
+        .hoverBlock {
+          .informBlock {
+            .blockText {
+              padding: 0 10px;
+              height: 210px;
+              .blockInfo {
+                margin-bottom: 45px;
+                .numberTitle {
+                  font-size: 16px;
+                  display: block;
+                }
+              }
+              .numberPrice {
+                position: absolute;
+                bottom: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .classNumbers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    .linkBlock {
+      position: relative;
+      .numberBlock {
+        max-width: 100%;
+        height:873px;
+      }
+      .hoverBlock {
+        opacity: 1;
+        transition: 1s;
+        .opacityWhite {
+          transition: 1s;
+          position: absolute;
+          top: 0;
+          background-color: white;
+          width: 100%;
+          height: 100%;
+          opacity: 0.8;
+        }
+        .informBlock {
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+          position: absolute;
+          top: 0;
+          width: 100%;
+          height:873px;
+          .numberProposition {
+            transition: 1s;
+            position: absolute;
+            font-size: 24px;
+            font-weight: 500;
+            top: 43px;
+            left: 15%;
+            background: center;
+            color: #222A3A;
+          }
+          .blockText {
+            transition: 1s;
+            margin-bottom: 45px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 140px;
+            .blockInfo {
+              .numberTitle {
+                color: #222A3A;
+                font-size: 24px;
+                display: block;
+              }
+              .numberText {
+                margin-top: 5px;
+                display: block;
+                max-width: 265px;
+                font-size: 16px;
+                line-height: 22px;
+                color: #222A3A;
+              }
+            }
+            .numberPrice {
+              display: block;
+            }
+          }
+        }
+        &:hover {
+          transition: 1s;
+          .opacityWhite {
+            opacity: 0;
+            transition: 1s;
+          }
+          .informBlock {
+            .numberProposition {
+              transition: 1s;
+              color: white;
+              text-shadow: 0px 0px 3px black;
+            }
+            .blockText {
+              opacity: 0;
+              transition: 1s;
+            }
+          }
+        }
+      }
+      .numberBlockFirst {
+        background-image: url("/../assets/img/firstNumber.jpg");
+      }
+      .numberBlockSecond {
+        background-image: url("/../assets/img/secondNumber.jpg");
+      }
+      .numberBlockThird {
+        background-image: url("/../assets/img/thirdNumber.jpg");
+      }
+      .numberBlockFourth {
+        background-image: url("/../assets/img/fourthNumber.jpg");
+      }
+      .numberBlockFifth {
+        background-image: url("/../assets/img/fifthNumber.jpg");
+      }
+    }
+  }
+  @media (min-width: 320px) and (max-width: 768px) {
+    .shelter {
+      display: flex;
+      justify-content: center;
+      .infoShelterBlock {
+        margin: 45px 25px 30px 25px;
+        min-height: 0;
+        .titleShelterBlock {
+          font-size: 16px;
+          margin-bottom: 15px;
+        }
+        .textShelterBlock {
+          font-size: 14px;
+          .mobileTextHidden {
+            display: none;
+          }
+        }
+      }
+      // .linkImageSaunaAnimation {
+      //   cursor: pointer;
+      //   .imageSaunaAnimation {
+      //     background: url('/../assets/img/saunaAnimation.jpg');
+      //     position: absolute;
+      //     right: -170px;
+      //     top: 30px;
+      //     width: 320px;
+      //     height: 220px;
+      //     transition: 1s;
+      //     display: flex;
+      //     align-items: flex-end;
+      //     &:hover {
+      //       transition: 1s;
+      //       right: 0;
+      //       .textImage {
+      //         transition: 1s;
+      //         transform: scale(1.3);
+      //       }
+      //     }
+      //     .blockTextImage {
+      //       width: 125px;
+      //       height: 45px;
+      //       display: flex;
+      //       justify-content: center;
+      //       align-items: center;
+      //       background-color: white;
+      //       border: 1px dotted black;
+      //       .textImage {
+      //         font-weight: 600;
+      //         transition: 1s;
+      //       }
+      //     }
+      //   }
+      // }
+    }
+  }
+  .shelter {
+    display: flex;
+    justify-content: center;
+    .infoShelterBlock {
+      margin: 130px 15px 0 15px;
+      width: 1100px;
+      min-height: 320px;
+      .titleShelterBlock {
+        font-size: 50px;
+        margin-bottom: 15px;
+        color: #222A3A;
+      }
+      .textShelterBlock {
+        line-height: 25px;
+        font-size: 16px;
+        color: #818282;
+      }
+      .mobileTextHidden {
+        line-height: 25px;
+        font-size: 16px;
+        color: #818282;
+      }
+    }
+    // .linkImageSaunaAnimation {
+    //   cursor: pointer;
+    //   .imageSaunaAnimation {
+    //     background: url('/../assets/img/saunaAnimation.jpg');
+    //     position: absolute;
+    //     right: -170px;
+    //     top: 30px;
+    //     width: 320px;
+    //     height: 220px;
+    //     transition: 1s;
+    //     display: flex;
+    //     align-items: flex-end;
+    //     &:hover {
+    //       transition: 1s;
+    //       right: 0;
+    //       .textImage {
+    //         transition: 1s;
+    //         transform: scale(1.3);
+    //       }
+    //     }
+    //     .blockTextImage {
+    //       width: 125px;
+    //       height: 45px;
+    //       display: flex;
+    //       justify-content: center;
+    //       align-items: center;
+    //       background-color: white;
+    //       border: 1px dotted black;
+    //       .textImage {
+    //         font-weight: 600;
+    //         transition: 1s;
+    //       }
+    //     }
+    //   }
+    // }
+  }
+  @media (min-width: 320px) and (max-width: 768px) {
+    .establishment {
+      .establishmentBlock {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 95px;
+        justify-content: center;
+        justify-items: center;
+        width: 100%;
+        margin: 0;
+        .linkBlock {
+          width: 100%;
+          max-width: 100%;
+          margin: 0;
+          .block {
+            transition: 0.5s;
+            max-width: 100%;
+            position: relative;
+            .imgBlock {
+              background-size: cover !important;
+              background-position: center center !important;
+              width: 100%;
+              height: 260px;
+            }
+            .blockInfo {
+              margin-top: 0;
+              margin-left: 0;
+              .titleBlockEstablishment {
+                background-color: white;
+                position: absolute;
+                top: calc(260px - 53px);
+                padding: 15px 60px 15px 25px;
+                font-size: 16px;
+                margin-bottom: 0;
+                transition: 0.5s;
+              }
+              .textBlock {
+                margin: 25px 35px 0 25px;
+                padding-right: 0;
+                max-width: 768px;
+                transition: 0.5s;
+                position: relative;
+                top: 0;
+              }
+              .titleSauna {
+                width: 140px;
+              }
+              .titleCafeteria {
+                width: 180px;
+              }
+              .titleHostel {
+                width: 150px;
+              }
+            }
+          }
+          &:hover {
+            .blockInfo {
+              .titleBlockEstablishment {
+                transition: 0.5s;
+                top: 260px;
+                width: 100%;
+              }
+              .textBlock {
+                transition: 0.5s;
+                top: 24px;
+              }
+            }
+          }
+        }
+        .linkSauna {
+          .sauna {
+            .imgSauna {
+              background: url('/../assets/img/saunaMobile.jpg') no-repeat;
+            }
+          }
+          &:hover {
+            .sauna {
+              .imgSauna {
+                transform: none;
+              }
+              .blockInfo{
+                .titleSauna {
+                  margin-left: 0;
+                }
+              }
+            }
+          }
+        }
+        .linkCafeteria {
+          .cafeteria {
+            .imgCafeteria {
+              background: url('/../assets/img/cafeteriaMobile.jpg') no-repeat;
+            }
+          }
+          &:hover {
+            .cafeteria {
+              .imgCafeteria {
+                transform: none;
+              }
+              .blockInfo{
+                .titleCafeteria {
+                  margin-left: 0;
+                }
+              }
+            }
+          }
+        }
+        .linkHostel {
+          .hostel {
+            .imgHostel {
+              background: url('/../assets/img/hostelMobile.jpg') no-repeat;
+            }
+          }
+          &:hover {
+            .hostel {
+              .imgHostel {
+                transform: none;
+              }
+              .blockInfo{
+                .titleHostel {
+                  margin-left: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .establishment {
+    .establishmentBlock {
+      margin-left: 5%;
+      margin-right: 5%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-content: center;
+      justify-items: center;
+      .linkBlock {
+        max-width: 540px;
+        margin: 0 20px;
+        .block {
+          max-width: 540px;
+          .imgBlock {
+            background-size: cover;
+            width: 100%;
+            height: 540px;
+            transition: 0.5s;
+          }
+          .blockInfo {
+            margin-top: 35px;
+            margin-left: -5px;
+            .titleBlockEstablishment {
+              margin-bottom: 5px;
+              width: max-content;
+              padding-right: 60px;
+              color: #222A3A;
+            }
+            .textBlock {
+              display: block;
+              padding-right: 10%;
+              max-width: 540px;
+              font-size: 16px;
+              color: #818282;
+            }
+          }
+        }
+      }
+      .linkSauna {
+        .sauna {
+          .imgSauna {
+            background: url('/../assets/img/sauna.jpg') center no-repeat;
+          }
+        }
+        &:hover {
+          .sauna {
+            .imgSauna {
+              transition: 0.5s;
+              transform: scale(1.03);
+            }
+            .blockInfo{
+              .titleSauna {
+                margin-left: 20px;
+                transition: 0.5s;
+              }
+            }
+          }
+        }
+      }
+      .linkCafeteria {
+        .cafeteria {
+          .imgCafeteria {
+            background: url('/../assets/img/cafeteria.jpg') center no-repeat;
+          }
+        }
+        &:hover {
+          .cafeteria {
+            .imgCafeteria {
+              transition: 0.5s;
+              transform: scale(1.03);
+            }
+            .blockInfo{
+              .titleCafeteria {
+                margin-left: 20px;
+                transition: 0.5s;
+              }
+            }
+          }
+        }
+      }
+      .linkHostel {
+        .hostel {
+          .imgHostel {
+            background: url('/../assets/img/hostel.jpg') center no-repeat;
+          }
+        }
+        &:hover {
+          .hostel {
+            .imgHostel {
+              transition: 0.5s;
+              transform: scale(1.03);
+            }
+            .blockInfo{
+              .titleHostel {
+                margin-left: 20px;
+                transition: 0.5s;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 769px) and (max-width: 1110px) {
+    .events {
+      .eventsBlock {
+        .linkBlock {
+          &:hover {
+            .block {
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 320px) and (max-width: 768px) {
+    .events {
+      margin-top: 100px;
+      .eventsBlock {
+        .linkBlock {
+          display: grid;
+          grid-template-columns: 1fr;
+          justify-content: center;
+          margin: 0;
+          width: 100%;
+          &:hover {
+            .block {
+              transition: 0.5s;
+            }
+            .imgBlock {
+              transition: 0.5s;
+            }
+          }
+          .block {
+            position: absolute;
+            left: 0;
+            max-width: calc(100% - 60px);
+            padding: 45px 25px 40px 25px;
+            height: 225px;
+            z-index: 1;
+            margin-right: 0;
+            transition: 0.5s;
+            opacity: 0.8;
+            .blockInfo {
+              height: calc(225px - 85px) !important;
+              .titleBlock {
+                font-size: 16px;
+                font-weight: 600;
+                margin-bottom: 12px;
+              }
+              .textBlock {
+                height: 110px;
+                font-size: 16px;
+                line-height: 22px;
+                color: #818282;
+                display: -webkit-box;
+                -webkit-line-clamp: 5;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+  
+              }
+            }
+            .arrowEvents {
+              display: none;
+            }
+          }
+          .imgBlock {
+            width: 100%;
+            height: 225px;
+            z-index: 0;
+            transition: 0.5s;
+            margin-left: 0;
+            background-size: cover !important;
+            background-position: left center !important;
+            .arrowEventsMobile {
+              display: block;
+              position: absolute;
+              top: 40px;
+              right: 25px;
+              transition: 0.5s;
+            }
+          }
+          &:hover {
+            .block {
+              left: -100%;
+              transition: 0.5s;
+            }
+            .arrowEventsMobile {
+              transition: 0.5s;
+              right: -50px;
+            }
+          }
+        }
+        .linkWeddingHall {
+          .imageWeddingHall {
+            background: no-repeat url('/../assets/img/weddingHallMobile.jpg');
+            position: relative;
+          }
+        }
+        .linkConferences {
+          .imageConferences {
+            background: no-repeat url('/../assets/img/conferencesMobile.jpg');
+            position: relative;
+          }
+        }
+        .linkShelterOnTheLakes {
+          .imageShelterOnTheLakes {
+            background: no-repeat url('/../assets/img/shelterOnTheLakesMobile.jpg');
+            position: relative;
+          }
+        }
+      }
+    }
+  }
+  .events {
+    margin-top: 240px;
+    .eventsBlock {
+      display: grid;
+      grid-template-columns: 1fr;
+      flex-direction: column;
+      justify-items: center;
+      .linkBlock {
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+        justify-content: center;
+        margin: 0 20px 45px 20px;
+        max-width: 1512px;
+        &:hover {
+          .block {
+            transition: 0.5s;
+            margin-right: 0;
+          }
+          .imgBlock {
+            transition: 0.5s;
+            margin-left: 0;
+          }
+        }
+        .block {
+          max-width: 690px;
+          height: 365px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-self: center;
+          align-content: center;
+          padding: 6.5% 16% 10% 5%;
+          margin-right: -70px;
+          z-index: 1;
+          background-color: white;
+          transition: 0.5s;
+          .blockInfo {
+            .titleBlock {
+              font-size: 24px;
+              font-weight: 600;
+              margin-bottom: 20px;
+              color: #222A3A;
+            }
+            .textBlock {
+              font-size: 16px;
+              line-height: 28px;
+              color: #818282;
+            }
+          }
+        }
+        .imgBlock {
+          max-width: 822px;
+          height: 457px;
+          z-index: 0;
+          margin-left: -80px;
+          transition: 0.5s;
+          .arrowEventsMobile {
+            display: none;
+          }
+        }
+      }
+      .linkWeddingHall {
+        .imageWeddingHall {
+          background: no-repeat url('/../assets/img/weddingHall.jpg');
+        }
+      }
+      .linkConferences {
+        .imageConferences {
+          background: no-repeat url('/../assets/img/conferences.jpg');
+        }
+      }
+      .linkShelterOnTheLakes {
+        .imageShelterOnTheLakes {
+          background: no-repeat url('/../assets/img/shelterOnTheLakes.jpg');
+        }
+      }
+    }
+  }
+  @media (min-width: 320px) and (max-width: 768px) {
+    .caruselWorks {
+      margin-top: 95px;
+      .mobileInstagram {
+        display: block;
+        width: 100%;
+        height: auto;
+        .blocksInstagram {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-gap: 5px;
+          padding-left: 0;
+          .blockInstagramImage {
+            justify-self: center;
+            display: block;
+            width: 100%;
+            height: 115px;
+            &.first {
+              background: center no-repeat url('/../assets/img/clothes.jpg');
+              background-size: cover;
+            }
+            &.second {
+              background: center no-repeat url('/../assets/img/interior.jpg');
+              background-size: cover;
+            }
+            &.third {
+              background: center no-repeat url('/../assets/img/compositionFirst.jpg');
+              background-size: cover;
+            }
+            &.fourth {
+              background: center no-repeat url('/../assets/img/books.jpg');
+              background-size: cover;
+            }
+            &.fifth {
+              background: center no-repeat url('/../assets/img/compositionSecond.jpg');
+              background-size: cover;
+            }
+            &.sixth {
+              background: center no-repeat url('/../assets/img/compositionThird.jpg');
+              background-size: cover;
+            }
+            .linkSlide {
+              width: inherit;
+              height: inherit;
+              position: relative;
+              &:hover {
+                .blockImage {
+                  .blockHover {
+                    opacity: 1;
+                    transition: 0.5s;
+                  }
+                  .fonImage {
+                    opacity: 0.3;
+                    transition: 0.5s;
+                  }
+                }
+              }
+              .blockImage {
+                width: inherit;
+                height: inherit;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .blockHover {
+                  position: absolute;
+                  width: 13.5vw;
+                  height: 8px;
+                  display: flex;
+                  justify-content: space-between;
+                  z-index: 1;
+                  opacity: 0;
+                  transition: 0.5s;
+                  .likeImage {
+                    background-size: contain;
+                    padding-left: 13px;
+                    width: 8px;
+                    height: 100%;
+                    font-size: 3px;
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                  }
+                  .commentImage {
+                    background-size: contain;
+                    width: 8px;
+                    height: 100%;
+                    padding-left: 13px;
+                    font-size: 3px;
+                    margin-right: 4px;
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                  }
+                }
+                .fonImage {
+                  display: flex;
+                  justify-self: center;
+                  width: calc(100% - 4.5%);
+                  height: calc(100% - 5%);
+                  background-color: black;
+                  opacity: 0;
+                  z-index: 0;
+                  transition: 0.5s;
+                }
+              }
+            }
+          }
+        }
+        .blockLinkInstagram {
+          display: block;
+          width: 100%;
+          text-align: right;
+          .linkInstagram {
+            font-size: 16px;
+            padding-right: 20px;
+          }
+        }
+      }
+    }
+    .caruselWorks {
+      margin-top: 95px;
+      .glidePhotoGalery {
+        display: none;
+        .glide__track {
+          .glide__slides {
+            flex-wrap: wrap;
+            .glide__slide {
+              margin: 0 5px 5px 5px !important;
+              width: 115px !important;
+              height: 115px !important;
+              
+              &.first {
+                background: center no-repeat url('/../assets/img/clothes.jpg');
+                background-size: cover;
+              }
+              &.second {
+                background: center no-repeat url('/../assets/img/interior.jpg');
+                background-size: cover;
+              }
+              &.third {
+                background: center no-repeat url('/../assets/img/compositionFirst.jpg');
+                background-size: cover;
+              }
+              &.fourth {
+                background: center no-repeat url('/../assets/img/books.jpg');
+                background-size: cover;
+              }
+              &.fifth {
+                background: center no-repeat url('/../assets/img/compositionSecond.jpg');
+                background-size: cover;
+              }
+              &.sixth {
+                background: center no-repeat url('/../assets/img/compositionThird.jpg');
+                background-size: cover;
+              }
+              .linkSlide {
+                width: inherit;
+                height: inherit;
+                position: relative;
+                &:hover {
+                  .blockImage {
+                    .blockHover {
+                      opacity: 1;
+                      transition: 0.5s;
+                    }
+                    .fonImage {
+                      opacity: 0.1;
+                      transition: 0.5s;
+                    }
+                  }
+                }
+                .blockImage {
+                  width: inherit;
+                  height: inherit;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  .blockHover {
+                    position: absolute;
+                    width: 180px;
+                    height: 25px;
+                    display: flex;
+                    justify-content: space-between;
+                    z-index: 1;
+                    opacity: 0;
+                    transition: 0.5s;
+                    .likeImage {
+                      padding-left: 40px;
+                      font-size: 16px;
+                      color: white;
+                    }
+                    .commentImage {
+                      padding-left: 40px;
+                      margin-right: 30px;
+                      font-size: 16px;
+                      color: white;
+                    }
+                  }
+                  .fonImage {
+                    width: calc(100% - 40px);
+                    height: calc(100% - 40px);
+                    background-color: black;
+                    opacity: 0;
+                    z-index: 0;
+                    transition: 0.5s;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 426px) and (max-width: 768px) {
+    .caruselWorks {
+      .mobileInstagram {
+        .blocksInstagram {
+          .blockInstagramImage {
+            height: 138px;
+            .linkSlide {
+              .blockImage {
+                .blockHover {
+                  height: 20px;
+                  align-items: center;
+                  .likeImage {
+                    height: 13px !important;
+                    width: 15px;
+                    background-position: left;
+                    padding-left: 17px;
+                    font-size: 8px;
+                  }
+                  .commentImage {
+                    height: 13px !important;
+                    width: 15px;
+                    background-position: left;
+                    padding-left: 17px;
+                    font-size: 8px;
+                    margin-right: 4px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .caruselWorks {
+    margin-top: 95px;
+    .glidePhotoGalery {
+      .glide__track {
+        .glide__slides {
+          .glide__slide {
+            display: block;
+            width: 360px;
+            height: 360px;
+            &.first {
+              background: center no-repeat url('/../assets/img/clothes.jpg');
+              background-size: cover;
+            }
+            &.second {
+              background: center no-repeat url('/../assets/img/interior.jpg');
+              background-size: cover;
+            }
+            &.third {
+              background: center no-repeat url('/../assets/img/compositionFirst.jpg');
+              background-size: cover;
+            }
+            &.fourth {
+              background: center no-repeat url('/../assets/img/books.jpg');
+              background-size: cover;
+            }
+            &.fifth {
+              background: center no-repeat url('/../assets/img/compositionSecond.jpg');
+              background-size: cover;
+            }
+            &.sixth {
+              background: center no-repeat url('/../assets/img/compositionThird.jpg');
+              background-size: cover;
+            }
+            .linkSlide {
+              width: inherit;
+              height: inherit;
+              position: relative;
+              &:hover {
+                .blockImage {
+                  .blockHover {
+                    opacity: 1;
+                    transition: 0.5s;
+                  }
+                  .fonImage {
+                    opacity: 0.1;
+                    transition: 0.5s;
+                  }
+                }
+              }
+              .blockImage {
+                width: inherit;
+                height: inherit;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .blockHover {
+                  position: absolute;
+                  width: 180px;
+                  height: 25px;
+                  display: flex;
+                  justify-content: space-between;
+                  z-index: 1;
+                  opacity: 0;
+                  transition: 0.5s;
+                  .likeImage {
+                    padding-left: 40px;
+                    font-size: 16px;
+                    color: white;
+                  }
+                  .commentImage {
+                    padding-left: 40px;
+                    margin-right: 30px;
+                    font-size: 16px;
+                    color: white;
+                  }
+                }
+                .fonImage {
+                  width: calc(100% - 40px);
+                  height: calc(100% - 40px);
+                  background-color: black;
+                  opacity: 0;
+                  z-index: 0;
+                  transition: 0.5s;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .mobileInstagram {
+      display: none;
+    }
+  }
+  @media (min-width: 320px) and (max-width: 768px) {
+    .shelterHoliday {
+      margin-top: 80px;
+      .blockShelterHoliday {
+        width: 768px;
+        .infoShelterHoliday {
+          max-width: 768px;
+          margin: 0 30px 0 36px;
+          .titleShelterHoliday {
+            font-size: 16px;
+            margin-bottom: 30px;
+          }
+          .textShelterHoliday {
+            max-width: 768px;
+            line-height: 27px;
+            padding-left: 0px;
+          }
+        }
+        .calendarBlock {
+          height: auto;
+          max-width: 768px;
+          grid-template-columns: 1fr;
+          margin-top: 80px;
+          .tourForm {
+            display: none;
+          }
+          .button {
+            width: 58%;
+            height: 60px;
+            justify-self: center;
+            .textMobile {
+              display: inline;
+            }
+          }
+        }
+      }
+    }
+  }
+  .shelterHoliday {
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    .blockShelterHoliday {
+      display: grid;
+      grid-template-columns: 1fr;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 2%;
+      width: 1070px;
+      .infoShelterHoliday {
+        max-width: 1030px;
+        display: flex;
+        flex-direction: column;
+        .titleShelterHoliday {
+          font-size: 24px;
+          font-weight: 600;
+          margin-bottom: 20px;
+          color: #222A3A;
+        }
+        .textShelterHoliday {
+          max-width: 830px;
+          font-size: 16px;
+          line-height: 28px;
+          display: block;
+          padding-left: 5px;
+          color: #818282;
+        }
+      }
+      .calendarBlock {
+        height: 130px;
+        max-width: 1110px;
+        display: grid;
+        grid-template-columns: 3fr 1.1fr;
+        justify-content: space-between;
+        margin-top: 120px;
+        .tourForm {
+          position: relative;
+          max-width: 100%;
+          display: flex;
+          justify-content: center;
+          margin: 0 10px;
+          .title {
+            font-size: 14px;
+            color: #818282;
+          }
+          .blockComponentsForm {
+            width: 100%;
+            align-self: center;
+            max-width: 780px;
+            display: grid;
+            grid-template-columns: minmax(max-content, 1fr) 1fr 1fr 1fr;
+            grid-gap: 10px;
+            .blockTour{
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              height: 55px;
+              width: max-content;
+            }
+            .blockClassRoom {
+              .showSelectItem {
+                font-size: 16px;
+                cursor: pointer;
+              }
+              .showSelect {
+                border: 1px solid black;
+                box-shadow: 0 0 3px rgba(0,0,0,0.5);
+                position: absolute;
+                top: 95px;
+                max-width: 100%;
+                height: max-content;
+                display: none;
+                z-index: 1;
+                background-color: white;
+                .selectList {
+                  margin: 0;
+                  max-width: 100%;
+                  height: 100%;
+                  padding-left: 0;
+                  display: flex;
+                  flex-direction: column;
+                  .selectItem2 {
+                    padding: 0 5px;
+                    display: flex;
+                    justify-content: flex-start !important;
+                    font-size: 16px !important;
+                    align-items: center;
+                    transition: 1s;
+                    height: 30px;
+                    cursor: pointer;
+                    &:hover {
+                      background-color: #e9e9e9;
+                      transition: 1s;
+                    }
+                  }
+                }
+              }
+            }
+            .blockArrival {
+              .showDateArrival {
+                cursor: pointer;
+              }
+            }
+            .blockDeparture {
+              .showDateDeparture {
+                cursor: pointer;
+              }
+            }
+            .blockSleepingPlace {
+              width: 95px;
+              max-width: 100%;          
+              .sleepingPlace {
+                display: flex;
+                justify-content: space-between;
+                .checkNumberBed {
+                  opacity: 0;
+                  position: absolute;
+                  width: 1px;
+                  height: 18px;
+                }
+                .numberBed {
+                  margin-bottom: 6px;
+                  cursor: pointer;
+                  font-size: 16px;
+                  color: black;
+                  opacity: 0.5;
+                  transition: 0.3s;
+                  &:hover {
+                    opacity: 1;
+                    transition: 0.3s;
+                  }
+                }
+                .checkNumberBed:checked {
+                  + .numberBed {
+                    opacity: 1;
+                  }
+                }
+              }
+            }
+          }
+          .showElementBooking {
+            position: absolute;
+            top: 130px;
+            width: 100%;
+            height: 283px;
+            background-color: white;
+            z-index: 1;
+            display: none;
+            .showCalendarArrival {
+              display: none;
+              margin-left: calc((100% - 285px)/2);
+              width: 100px;
+              max-width: 100%;
+              height: 240px;
+              .today {
+                transition: 0.2s;
+                border-radius: 50%;
+                background-color: black;
+                color: white !important;
+                border-radius: 50%;
+                transition: 0.2s;
+                cursor: pointer;
+              }
+              #calendar3 {
+                width: 100%;
+                font: monospace;
+                line-height: 1.2em;
+                font-size: 15px;
+                text-align: center;
+              }
+              #calendar3 thead tr:nth-child(1) {
+                border-bottom: 50px solid white !important;
+              }
+              #calendar3 thead tr:last-child {
+                color: #818282
+              }
+              #calendar3 thead tr:nth-child(1) td:nth-child(2) {
+                color: #818282;
+                position: absolute;
+              }
+              #calendar3 thead tr:nth-child(1) {
+                height: 25px;
+                color: #818282;
+              }
+              #calendar3 thead tr:nth-child(1) td {
+                padding-bottom: 25px;
+              }
+              #calendar3 thead tr:nth-child(1) td:nth-child(1):hover, #calendar1 thead tr:nth-child(1) td:nth-child(3):hover {
+                cursor: pointer;
+              }
+              #calendar3 tbody td {
+                color: #818282;
+                height: 20px;
+                padding: 5px;
+                border-right: 5px solid white;
+                border-left: 5px solid white;
+                transition: 0.2s;
+                border-radius: 50%;
+              }
+              .hover:hover {
+                background-color: black;
+                color: white !important;
+                border-radius: 50%;
+                transition: 0.2s;
+                cursor: pointer;
+              }
+              .selectedDate {
+                background-color: black;
+                color: white !important;
+                border-radius: 50%;
+                transition: 0.2s;
+                cursor: pointer;
+              }
+            }
+            .showCalendarDeparture {
+              display: none;
+              margin-left: calc((100% - 285px)/2);
+              width: 100px;
+              max-width: 100%;
+              height: 240px;
+              .today {
+                transition: 0.2s;
+                border-radius: 50%;
+                background-color: black;
+                color: white !important;
+                border-radius: 50%;
+                transition: 0.2s;
+                cursor: pointer;
+              }
+              .dateCalendar {
+                transition: 0.2s;
+                border-radius: 50%;
+                background-color: black;
+                color: white !important;
+                border-radius: 50%;
+                transition: 0.2s;
+                cursor: pointer;
+              }
+              #calendar4 {
+                width: 100%;
+                font: monospace;
+                line-height: 1.2em;
+                font-size: 15px;
+                text-align: center;
+              }
+              #calendar4 thead tr:nth-child(1) {
+                border-bottom: 50px solid white !important;
+              }
+              #calendar4 thead tr:last-child {
+                color: #818282
+              }
+              #calendar4 thead tr:nth-child(1) td:nth-child(2) {
+                color: #818282;
+                position: absolute;
+              }
+              #calendar4 thead tr:nth-child(1) {
+                height: 25px;
+                color: #818282;
+              }
+              #calendar4 thead tr:nth-child(1) td {
+                padding-bottom: 25px;
+              }
+              #calendar4 thead tr:nth-child(1) td:nth-child(1):hover, #calendar2 thead tr:nth-child(1) td:nth-child(3):hover {
+                cursor: pointer;
+              }
+              #calendar4 tbody td {
+                color: #818282;
+                height: 20px;
+                padding: 5px;
+                border-right: 5px solid white;
+                border-left: 5px solid white;
+                transition: 0.2s;
+                border-radius: 50%;
+              }
+              .hover:hover {
+                background-color: black;
+                color: white !important;
+                border-radius: 50%;
+                transition: 0.2s;
+                cursor: pointer;
+              }
+              .selectedDate {
+                background-color: black;
+                color: white !important;
+                border-radius: 50%;
+                transition: 0.2s;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+        .button {
+          padding: 0;
+          width: 100%;
+          height: 130px;
+          background-color: #222A3A;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          transition: 0.5s;
+          &:hover {
+            background-color: #384155;
+            opacity: 1;
+            transition: 0.5s;
+          }
+          .linkButton {
+            color: white;
+            font-size: 16px;
+          }
+          .textMobile {
+            color: white;
+            font-size: 16px;
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 320px) and (max-width: 768px) {
+    .googleMap {
+      margin-top: 85px;
+      .map {
+        height: 375px;
+      }
+    }
+  }
+  .googleMap {
+    margin-top: 100px;
+  }
+}

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Сімейний - Готельний комплекс «Shelter»</title>
+</head>
+<body id="body" class="familyNumberPageSite numberPageSite">
+	${require('html-loader!./components/header.html')}
+	<article class="menu-xs container" id="menuXS">
+		<div class="closeMenuBLock">
+			<div class="borderCloseButton">
+				<a href="#" class="closeMenuButton" id="closeMenuButton"></a>
+			</div>
+		</div>
+		<div class="logoMenuBlock">
+			<a href="#" class="logoMenu"></a>
+		</div>
+		<ul class="mobileMenuList">
+			<li class="menuItem"><a href="#" class="linkItem">готель</a></li>
+			<li class="menuItem"><a href="#" class="linkItem">сауна</a></li>
+			<li class="menuItem"><a href="#" class="linkItem">весілля</a></li>
+			<li class="menuItem"><a href="#" class="linkItem">конференції</a></li>
+			<li class="menuItem"><a href="#" class="linkItem">мережа</a></li>
+			<li class="menuItem"><a href="#" class="linkItem">контакти</a></li>
+		</ul>
+		<div class="messengerBlockFirst">
+			<ul class="messengerList">
+				<li class="messengerItem"><a href="#" class="messengerLink">VIBER</a></li>
+				<li class="messengerItem"><a href="#" class="messengerLink">TELEGRAM</a></li>
+			</ul>
+		</div>
+		<div class="phoneNumberBlock">
+			<a href="tel:+380500000000" class="phoneNumber">+38 (050) 000 00 00</a>
+		</div>
+		<div class="messengerBlockSecond">
+			<ul class="messengerList">
+				<li class="messengerItem"><a href="#" class="messengerLink">FACEBOOK</a></li>
+				<li class="messengerItem"><a href="#" class="messengerLink">INSTAGRAM</a></li>
+			</ul>
+		</div>
+	</article>
+	<main>
+		<article class="booking container">
+			<div class="blockFirst">
+				<div class="blockMobile">
+					<div class="mainPicture"></div>
+					<div class="blockTitleMobile">
+						<a href="#" class="linkViewRooms">
+							<h3 class="title">СІМЕЙНИЙ&nbsp;НОМЕР</h3>
+						</a>
+					</div>
+				</div>
+				<div class="blockDownRow">
+					<form class="tourForm" action="">
+						<div class="blockComponentsForm">
+							<div class="blockTour blockClassRoom">
+								<span class="title">номер</span>
+								<span class="showSelectItem" id="showSelectItem"></span>
+								<div class="showSelect" id="showSelect">
+									<ul class="selectList" id="selectList">
+										<li class="selectItem">Стандарт</li>
+										<li class="selectItem">Покращений</li>
+										<li class="selectItem">Двокімнатний люкс</li>
+										<li class="selectItem">Економ</li>
+										<li class="selectItem">Сімейний</li>
+									</ul>
+								</div>
+							</div>
+							<div class="blockTour blockArrival">
+								<span class="title" id="titleArrival">заїзд</span>
+								<span class="showDateArrival" id="showDateArrival"></span>
+							</div>
+							<div class="blockTour blockDeparture">
+								<span class="title" id="titleDeparture">виїзд</span>
+								<span class="showDateDeparture" id="showDateDeparture"></span>
+							</div>
+							<div class="blockTour blockSleepingPlace">
+								<span class="title">спальні місця</span>
+								<div class="sleepingPlace">
+									<input class="checkNumberBed" type="radio" name="sleepingPlace" id="first">
+									<label class="numberBed" for="first">1</label>
+									<input class="checkNumberBed" type="radio" name="sleepingPlace" id="second">
+									<label class="numberBed" for="second">2</label>
+									<input class="checkNumberBed" type="radio" name="sleepingPlace" id="third">
+									<label class="numberBed" for="third">3</label>
+									<input class="checkNumberBed" type="radio" name="sleepingPlace" id="fourth">
+									<label class="numberBed" for="fourth">4</label>
+								</div>
+							</div>
+						</div>
+						<div class="showElementBooking" id="showElementBooking">
+							<div class="showCalendarArrival" id="showCalendarArrival">
+								<table id="calendar1" class="calendar">
+									<thead>
+										<tr><td><</td><td></td><td colspan="4">></td></tr>
+										<tr><td>Пн</td><td>Вт</td><td>Ср</td><td>Чт</td><td>Пт</td><td>Сб</td><td>Нд</td>
+									</thead>
+									<tbody>
+									</tbody>
+								</table>
+							</div>
+							<div class="showCalendarDeparture" id="showCalendarDeparture">
+								<table id="calendar2" class="calendar">
+									<thead>
+										<tr><td><</td><td></td><td colspan="4">></td></tr>
+										<tr><td>Пн</td><td>Вт</td><td>Ср</td><td>Чт</td><td>Пт</td><td>Сб</td><td>Нд</td>
+									</thead>
+									<tbody>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</form>
+					<div class="button"><a href="#" class="linkButton">забронювати</a></div>
+				</div>
+			</div>
+			<div class="blockSecond">
+				<a href="#" class="linkViewRooms">
+				<div class="viewRooms">
+					<div class="blockInfo">
+						<div class="blockTitlePrice">
+							<h3 class="title">Сімейний номер</h3>
+							<span class="price priceEmblem">1390 грн</span>
+						</div>
+						<span class="text">
+							Просторий номер розташований на другому поверсі в окремому будинку.
+							До послуг гостей телевізор, маленький холодильник, диван та окрема ванна
+							кімната з душем та туалетно-косметичні засоби
+						</span>
+						<div class="blockMessanger">
+							<span class="viber">Viber</span>
+							<span class="telegram">Telegram</span>
+						</div>
+					</div>
+				</div>
+			</a>
+			<div class="infoNumber">
+				<ul class="listItemsNumber">
+					<li class="itemNumber firstItemNumber">2 спальне ліжко</li>
+					<li class="itemNumber SecondItemNumber">ванна кімната</li>
+					<li class="itemNumber thirdItemNumber">диван</li>
+					<li class="itemNumber fourthItemNumber">халати/рушники</li>
+					<li class="itemNumber fifthItemNumber">телевізор</li>
+					<li class="itemNumber sixthItemNumber">холодильник</li>
+				</ul>
+			</div>
+			</div>
+		</article>
+		<article class="caruselWorks container">
+			<div class="mobileShowImageBlock" id="mobileShowImageBlock"></div>
+				<div class="glide glideFamilyNumber">
+					<div class="glide__track" data-glide-el="track">
+						<ul class="glide__slides">
+							<li class="glide__slide first">
+								<a href="#" class="linkSlide">
+									<div class="blockImage">
+										<div class="blockHover">
+											<div class="likeImage">51</div>
+											<div class="commentImage">12</div>
+										</div>
+										<div class="fonImage"></div>
+									</div>
+								</a>
+							</li>
+							<li class="glide__slide second">
+								<a href="#" class="linkSlide">
+									<div class="blockImage">
+										<div class="blockHover">
+											<div class="likeImage">32</div>
+											<div class="commentImage">5</div>
+										</div>
+										<div class="fonImage"></div>
+									</div>
+								</a>
+							</li>
+							<li class="glide__slide third">
+								<a href="#" class="linkSlide">
+									<div class="blockImage">
+										<div class="blockHover">
+											<div class="likeImage">115</div>
+											<div class="commentImage">12</div>
+										</div>
+										<div class="fonImage"></div>
+									</div>
+								</a>
+							</li>
+							<li class="glide__slide fourth">
+								<a href="#" class="linkSlide">
+									<div class="blockImage">
+										<div class="blockHover">
+											<div class="likeImage">1374</div>
+											<div class="commentImage">58</div>
+										</div>
+										<div class="fonImage"></div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			<div class="additionalServicesBlock">
+				<span class="additionalServices textInfo">
+					Додаткові послуги: room-service, прання, хімчистка, прасування.
+				</span>
+				<span class="childrenProposition textInfo">
+					За розміщення однієї дитини віком до 6 років на наявних ліжках не стягується жодної плати.
+				</span>
+				<span class="begAdditional textInfo">
+					У номері є можливіть розміщення 1го додаткового ліжка, крім номеру "стандарт".
+				</span>
+				<span class="priceBedAdditional textInfo">
+					За розміщення додаткогово ліжка стягується 200 UAH за ніч.
+ 				</span>
+				<span class="conditionBedAdditional textInfo">
+					Вартість додаткогово ліжка не включається автоматично в загальну вартіть проживання і повинна бути оплачена окремо в помешканні.
+ 				</span>
+			</div>
+		</article>
+		<article class="classNumbers container">
+			<div class="classNumbersBlock">
+			<a href="standardNumber.html" class="linkBlock">
+				<div class="numberBlock numberBlockFirst"></div>
+				<div class="hoverBlock">
+					<div class="opacityWhite"></div>
+					<div class="informBlock">
+						<span class="numberProposition">01</span>
+						<div class="blockText">
+							<div class="blockInfo">
+								<h3 class="numberTitle">СТАНДАРТ</h3>
+								<span class="numberText">власна вбиральня, мінібар, сейф, телевізор, та інші зручності.</span>
+							</div>
+							<span class="numberPrice">1200 грн</span>
+						</div>
+					</div>
+				</div>
+			</a>
+			<a href="updateNumber.html" class="linkBlock">
+				<div class="numberBlock numberBlockSecond"></div>
+				<div class="hoverBlock">
+					<div class="opacityWhite"></div>
+					<div class="informBlock">
+						<span class="numberProposition">02</span>
+						<div class="blockText">
+							<div class="blockInfo">
+								<h3 class="numberTitle">ПОКРАЩЕНИЙ</h3>
+								<span class="numberText">вітальня, власна ванна, гардероб, мінібар, телевізор, посуд та інші зручності.</span>
+							</div>
+							<span class="numberPrice">1500 грн</span>
+						</div>
+					</div>
+				</div>
+			</a>
+			<a href="doubleRoomLuxNumber.html" class="linkBlock">
+				<div class="numberBlock numberBlockThird"></div>
+				<div class="hoverBlock">
+					<div class="opacityWhite"></div>
+					<div class="informBlock">
+						<span class="numberProposition">03</span>
+						<div class="blockText">
+							<div class="blockInfo">
+								<h3 class="numberTitle">ДВОКІМНАТНИЙ ЛЮКС</h3>
+							<span class="numberText">вітальня, власна ванна, гардероб, мінібар, кондеціонер, телевізор, посуд, халат та інші зручності.</span>
+							</div>
+							<span class="numberPrice">1750 грн</span>
+						</div>
+					</div>
+				</div>
+			</a>
+			<a href="economyNumber.html" class="linkBlock">
+				<div class="numberBlock numberBlockFourth"></div>
+				<div class="hoverBlock">
+					<div class="opacityWhite"></div>
+					<div class="informBlock">
+						<span class="numberProposition">04</span>
+						<div class="blockText">
+							<div class="blockInfo">
+								<h3 class="numberTitle">ЕКОНОМ</h3>
+								<span class="numberText">Власна вбиральня, телевізор та інші зручності</span>
+							</div>
+							<span class="numberPrice">910 грн</span>
+						</div>
+					</div>
+				</div>
+			</a>
+			<!-- <a href="familyNumber.html" class="linkBlock">
+				<div class="numberBlock numberBlockFifth"></div>
+				<div class="hoverBlock">
+					<div class="opacityWhite"></div>
+					<div class="informBlock">
+						<span class="numberProposition">05</span>
+						<div class="blockText">
+							<div class="blockInfo">
+								<h3 class="numberTitle">СІМЕЙНИЙ</h3>
+							<span class="numberText">власна вбиральня, мінібар, диван, телевізор, та інші зручності.</span>
+							</div>
+							<span class="numberPrice">1390 грн</span>
+						</div>
+					</div>
+				</div>
+			</a> -->
+		</div>
+		</article>
+		<article class="mobileMessanger container">
+			<div class="blockMessanger">
+				<span class="viber">Viber</span>
+				<span class="telegram">Telegram</span>
+			</div>
+		</article>
+		<article class="googleMap container">
+			<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10003.61849583877!2d24.788683786397346!3d51.18398079025253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472430f2210e4983%3A0x5dad156121be28d9!2sShelter%20Hotel%20%26%20Restaurant!5e0!3m2!1sru!2sua!4v1596460398623!5m2!1sru!2sua" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		</article>
+	</main>
+	${require('html-loader!./components/footer.html')}
+	<script src="../assets/showElementForNumberPage.js"></script>
+	<script>
+		function selectedArrivalDate() {
+			let monthYearCalendars = document.querySelector('#calendar1>thead>tr:nth-child(1)>td:nth-child(2)')
+			let mount = monthYearCalendars.getAttribute("data-month")
+			let year = monthYearCalendars.getAttribute("data-year")
+			if(window.innerWidth <= 750){
+				showDateArrival.innerHTML = [('0' + event.target.innerHTML).slice(-2), ('0' + (parseInt(mount) + 1)).slice(-2), year.slice(2,4)].join(".");
+			}
+			else {
+				showDateArrival.innerHTML = [('0' + event.target.innerHTML).slice(-2), ('0' + (parseInt(mount) + 1)).slice(-2), year].join(".");
+			}
+			
+			if(document.querySelector('#calendar1 td.selectedDate')){
+				document.querySelector('#calendar1 td.selectedDate').classList.remove('selectedDate')
+			}
+			if(document.querySelector('#calendar1 td.today')){
+				document.querySelector('#calendar1 td.today').classList.remove('today')
+			}
+			if(!event.target.classList.contains('selectedDate')) {
+				event.target.classList.add('selectedDate');
+			}
+			else {
+				event.target.classList.remove('selectedDate');
+			}
+		}
+		function selectedDepartureDate() {
+			let monthYearCalendars = document.querySelector('#calendar2>thead>tr:nth-child(1)>td:nth-child(2)')
+			let mount = monthYearCalendars.getAttribute("data-month");
+			let year = monthYearCalendars.getAttribute("data-year");
+			if(window.innerWidth <= 750){
+				showDateDeparture.innerHTML = [('0' + event.target.innerHTML).slice(-2), ('0' + (parseInt(mount) + 1)).slice(-2), year.slice(2,4)].join(".");
+				console.log('1')
+			}
+			else {
+				showDateDeparture.innerHTML = [('0' + event.target.innerHTML).slice(-2), ('0' + (parseInt(mount) + 1)).slice(-2), year].join(".");
+				console.log('2')
+			}
+			
+			if(document.querySelector('#calendar2 td.selectedDate')){
+				document.querySelector('#calendar2 td.selectedDate').classList.remove('selectedDate')
+			}
+			if(document.querySelector('#calendar2 td.today')){
+				document.querySelector('#calendar2 td.today').classList.remove('today')
+			}
+			if(!event.target.classList.contains('selectedDate')) {
+				event.target.classList.add('selectedDate');
+			}
+			else {
+				event.target.classList.remove('selectedDate');
+			}
+		}
+	</script>
+</body>
+</html>

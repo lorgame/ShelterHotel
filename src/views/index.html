@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Готельний комплекс «Shelter»</title>
+</head>
+<body id="body" class="mainPageSite">
+	${require('html-loader!./components/header.html')}
+	<article class="menu-xs container" id="menuXS">
+		<div class="closeMenuBLock">
+			<div class="borderCloseButton">
+				<a href="#" class="closeMenuButton" id="closeMenuButton"></a>
+			</div>
+		</div>
+		<div class="logoMenuBlock">
+			<a href="#" class="logoMenu"></a>
+		</div>
+		<ul class="mobileMenuList">
+			<li class="menuItem"><a href="#" class="linkItem">готель</a></li>
+			<li class="menuItem"><a href="#" class="linkItem">сауна</a></li>
+			<li class="menuItem"><a href="../wedding.html" class="linkItem">весілля</a></li>
+			<li class="menuItem"><a href="#" class="linkItem">конференції</a></li>
+			<li class="menuItem"><a href="#" class="linkItem">мережа</a></li>
+			<li class="menuItem"><a href="#" class="linkItem">контакти</a></li>
+		</ul>
+		<div class="messengerBlockFirst">
+			<ul class="messengerList">
+				<li class="messengerItem"><a href="#" class="messengerLink">VIBER</a></li>
+				<li class="messengerItem"><a href="#" class="messengerLink">TELEGRAM</a></li>
+			</ul>
+		</div>
+		<div class="phoneNumberBlock">
+			<a href="tel:+380500000000" class="phoneNumber">+38 (050) 000 00 00</a>
+		</div>
+		<div class="messengerBlockSecond">
+			<ul class="messengerList">
+				<li class="messengerItem"><a href="#" class="messengerLink">FACEBOOK</a></li>
+				<li class="messengerItem"><a href="#" class="messengerLink">INSTAGRAM</a></li>
+			</ul>
+		</div>
+	</article>
+	<main>
+		<article class="booking container">
+			<div class="blockFirst">
+				<div class="mainPicture"></div>
+				<div class="videoBlockMobile">
+					<video class="video mp4" poster="../assets/img/mainPhoto.jpg">
+						<source src="../assets/video/Дизайн Спальни - идеи - цвета - 2019 - Bedroom Design color ideas.mp4">
+					</video>
+					<div class="videoHover">
+						<div class="videoOpacity"></div>
+						<div class="videoPlayStop" id="videoPlayStopMobile">
+							<div class="videoPlayBorderAnimation"></div>
+							<div class="videoPlayBorder" onclick="videoPlayStop()">
+								<div class="videoPlay"></div>
+								<div class="videoStop"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="blockDownRow">
+					<form class="tourForm" action="">
+						<div class="blockComponentsForm">
+							<div class="blockTour blockClassRoom">
+								<span class="title">номер</span>
+								<span class="showSelectItem" id="showSelectItem"></span>
+								<div class="showSelect" id="showSelect">
+									<ul class="selectList" id="selectList">
+										<li class="selectItem">Стандарт</li>
+										<li class="selectItem">Покращений</li>
+										<li class="selectItem">Двокімнатний люкс</li>
+										<li class="selectItem">Економ</li>
+										<li class="selectItem">Сімейний</li>
+									</ul>
+								</div>
+							</div>
+							<div class="blockTour blockArrival">
+								<span class="title" id="titleArrival">заїзд</span>
+								<span class="showDateArrival" id="showDateArrival"></span>
+							</div>
+							<div class="blockTour blockDeparture">
+								<span class="title" id="titleDeparture">виїзд</span>
+								<span class="showDateDeparture" id="showDateDeparture"></span>
+							</div>
+							<div class="blockTour blockSleepingPlace">
+								<span class="title">спальні місця</span>
+								<div class="sleepingPlace">
+									<input class="checkNumberBed" type="radio" name="sleepingPlace" id="first">
+									<label class="numberBed" for="first">1</label>
+									<input class="checkNumberBed" type="radio" name="sleepingPlace" id="second">
+									<label class="numberBed" for="second">2</label>
+									<input class="checkNumberBed" type="radio" name="sleepingPlace" id="third">
+									<label class="numberBed" for="third">3</label>
+									<input class="checkNumberBed" type="radio" name="sleepingPlace" id="fourth">
+									<label class="numberBed" for="fourth">4</label>
+								</div>
+							</div>
+						</div>
+						<div class="showElementBooking" id="showElementBooking">
+							<div class="showCalendarArrival" id="showCalendarArrival">
+								<table id="calendar1" class="calendar">
+									<thead>
+										<tr><td><</td><td></td><td colspan="4">></td></tr>
+										<tr><td>Пн</td><td>Вт</td><td>Ср</td><td>Чт</td><td>Пт</td><td>Сб</td><td>Нд</td>
+									</thead>
+									<tbody>
+									</tbody>
+								</table>
+							</div>
+							<div class="showCalendarDeparture" id="showCalendarDeparture">
+								<table id="calendar2" class="calendar">
+									<thead>
+										<tr><td><</td><td></td><td colspan="4">></td></tr>
+										<tr><td>Пн</td><td>Вт</td><td>Ср</td><td>Чт</td><td>Пт</td><td>Сб</td><td>Нд</td>
+									</thead>
+									<tbody>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</form>
+					<div class="button"><a href="#" class="linkButton">забронювати</a></div>
+				</div>
+			</div>
+			<div class="blockSecond">
+				<a href="#" class="linkViewRooms">
+				<div class="viewRooms">
+					<div class="blockText">
+						<h3 class="title">ДОЗВОЛЬ СОБІ КОМФОРТНИЙ ВІДПОЧИНОК</h3>
+						<span class="text textArrow">переглянути номери</span>
+					</div>
+				</div>
+			</a>
+				<div class="videoBlock">
+					<video class="video mp4" poster="../assets/video/video.jpg">
+						<source src="../assets/video/Дизайн Спальни - идеи - цвета - 2019 - Bedroom Design color ideas.mp4">
+					</video>
+					<div class="videoHover">
+						<div class="videoOpacity"></div>
+						<div class="videoPlayStop" id="videoPlayStop">
+							<div class="videoPlayBorderAnimation"></div>
+							<div class="videoPlayBorder" onclick="videoPlayStop()">
+								<div class="videoPlay"></div>
+								<div class="videoStop"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="blockThird">
+				<ul class="messengers">
+					<li class="item"><a class="link" href="">INSTAGRAM</a></li>
+					<li class="item"><a class="link" href="">FACEBOOK</a></li>
+				</ul>
+			</div>
+		</article>
+		<article class="classNumbers container">
+			<a href="standardNumber.html" class="linkBlock">
+				<div class="numberBlock numberBlockFirst"></div>
+				<div class="hoverBlock">
+					<div class="opacityWhite"></div>
+					<div class="informBlock">
+						<span class="numberProposition">01</span>
+						<div class="blockText">
+							<div class="blockInfo">
+								<h3 class="numberTitle">СТАНДАРТ</h3>
+								<span class="numberText">власна вбиральня, мінібар, сейф, телевізор, та інші зручності.</span>
+							</div>
+							<span class="numberPrice">1200 грн</span>
+						</div>
+					</div>
+				</div>
+			</a>
+			<a href="updateNumber.html" class="linkBlock">
+				<div class="numberBlock numberBlockSecond"></div>
+				<div class="hoverBlock">
+					<div class="opacityWhite"></div>
+					<div class="informBlock">
+						<span class="numberProposition">02</span>
+						<div class="blockText">
+							<div class="blockInfo">
+								<h3 class="numberTitle">ПОКРАЩЕНИЙ</h3>
+								<span class="numberText">вітальня, власна ванна, гардероб, мінібар, телевізор, посуд та інші зручності.</span>
+							</div>
+							<span class="numberPrice">1500 грн</span>
+						</div>
+					</div>
+				</div>
+			</a>
+			<a href="doubleRoomLuxNumber.html" class="linkBlock">
+				<div class="numberBlock numberBlockThird"></div>
+				<div class="hoverBlock">
+					<div class="opacityWhite"></div>
+					<div class="informBlock">
+						<span class="numberProposition">03</span>
+						<div class="blockText">
+							<div class="blockInfo">
+								<h3 class="numberTitle">ДВОКІМНАТНИЙ ЛЮКС</h3>
+							<span class="numberText">вітальня, власна ванна, гардероб, мінібар, кондеціонер, телевізор, посуд, халат та інші зручності.</span>
+							</div>
+							<span class="numberPrice">1750 грн</span>
+						</div>
+					</div>
+				</div>
+			</a>
+			<a href="economyNumber.html" class="linkBlock">
+				<div class="numberBlock numberBlockFourth"></div>
+				<div class="hoverBlock">
+					<div class="opacityWhite"></div>
+					<div class="informBlock">
+						<span class="numberProposition">04</span>
+						<div class="blockText">
+							<div class="blockInfo">
+								<h3 class="numberTitle">ЕКОНОМ</h3>
+								<span class="numberText">Власна вбиральня, телевізор та інші зручності</span>
+							</div>
+							<span class="numberPrice">910 грн</span>
+						</div>
+					</div>
+				</div>
+			</a>
+			<a href="familyNumber.html" class="linkBlock">
+				<div class="numberBlock numberBlockFifth"></div>
+				<div class="hoverBlock">
+					<div class="opacityWhite"></div>
+					<div class="informBlock">
+						<span class="numberProposition">05</span>
+						<div class="blockText">
+							<div class="blockInfo">
+								<h3 class="numberTitle">СІМЕЙНИЙ</h3>
+							<span class="numberText">власна вбиральня, мінібар, диван, телевізор, та інші зручності.</span>
+							</div>
+							<span class="numberPrice">1390 грн</span>
+						</div>
+					</div>
+				</div>
+			</a>
+		</article>
+		<article class="shelter container">
+			<div class="infoShelterBlock">
+				<h2 class="titleShelterBlock">SHELTER</h2>
+				<span class="textShelterBlock">
+					Запрошуємо у трьохзірковий готель розташований у двох хвилинах їзди від міста Ковеля. Shelter знаходиться на перехресті автошляхів Варшава-Київ, Брест-Житомир, в селі Колодяжне. Батьківщина геніальної поетеси Лесі Українки. <span class="mobileTextHidden">Запрошуємо у трьохзірковий готель розташований у двох хвилинах їзди від міста Ковеля. Shelter знаходиться на перехресті автошляхів Варшава-Київ, Брест-Житомир, в селі Колодяжне. Батьківщина геніальної поетеси Лесі Українки.</span>
+				</span>
+			</div>
+			<!-- <a href="#" class="linkImageSaunaAnimation">
+				<div class="imageSaunaAnimation">
+					<div class="blockTextImage">
+						<span class="textImage">Сауна</span>
+					</div>
+				</div>
+			</a> -->
+		</article>
+		<article class="establishment container">
+			<div class="establishmentBlock">
+				<a href="#" class="linkSauna linkBlock">
+					<div class="sauna block">
+						<div class="imgSauna imgBlock"></div>
+						<div class="blockInfo">
+							<h3 class="titleSauna titleBlockEstablishment">САУНА</h3>
+						<span class="textSauna textBlock">Для любителів здорового відпочинку у нас функціонує сауна. Де можна з користю для організму відпочити та попаритися. </span>
+						</div>
+					</div>
+				</a>
+				<a href="#" class="linkCafeteria linkBlock">
+					<div class="cafeteria block">
+						<div class="imgCafeteria imgBlock"></div>
+						<div class="blockInfo">
+							<h3 class="titleCafeteria titleBlockEstablishment">КАФЕТЕРІЙ</h3>
+						<span class="textCafeteria textBlock">Полюбляєте швидко перекусити, випити кави і в дорогу? Для гостей готелю та усіх бажаючих у нас діє кафетерій.</span>
+						</div>
+					</div>
+				</a>
+				<a href="#" class="linkHostel linkBlock">
+					<div class="hostel block">
+						<div class="imgHostel imgBlock"></div>
+						<div class="blockInfo">
+							<h3 class="titleHostel titleBlockEstablishment">ХОСТЕЛ</h3>
+						<span class="textHostel textBlock">Багато з друзями подорожуєте, але в готелях немає бажання жити? Ми підготували спеціальний хостел для групового заселення.</span>
+						</div>
+					</div>
+				</a>
+			</div>
+		</article>
+		<article class="events container">
+			<div class="eventsBlock">
+				<a href="" class="linkWeddingHall linkBlock">
+					<div class="weddingHall block">
+						<div class="blockInfo">
+							<h3 class="titleWeddingHall titleBlock">ВЕСІЛЬНИЙ ЗАЛ</h3>
+							<span class="textWeddingHall textBlock">Прагнучи створити незабутню атмосферу вашого весілля ми потурбувалися, щоб обслуговування було на найвищому рівні. Ми пропонуємо комфортний весільний зал, смачну кухню та привітних офіціантів. Можливість поселити гостей вашого свята у нашому готелі.</span>
+						</div>
+						<div class="arrowEvents"></div>
+					</div>
+					<div class="imageWeddingHall imgBlock">
+						<div class="arrowEventsMobile"></div>
+					</div>
+				</a>
+				<a href="" class="linkConferences linkBlock">
+					<div class="conferences block">
+						<div class="blockInfo">
+							<h3 class="titleConferences titleBlock">ПРОВЕДЕННЯ КОНФЕРЕНЦІЙ</h3>
+							<span class="textConferences textBlock">Зручне розташування, необхідне обладнання та комфортний конференц-зал. Можливість розмістити слухачів конференції на ночівлю роблять Shelter ідеальним місцем для проведення будь-яких подій.</span>
+						</div>
+						<div class="arrowEvents"></div>
+					</div>
+					<div class="imageConferences imgBlock">
+						<div class="arrowEventsMobile"></div>
+					</div>
+				</a>
+				<a href="" class="linkShelterOnTheLakes linkBlock">
+					<div class="shelterOnTheLakes block">
+						<div class="blockInfo">
+							<h3 class="titleShelterOnTheLakes titleBlock">SHELTER НА ОЗЕРАХ</h3>
+							<span class="textShelterOnTheLakes textBlock">Запрошуємо відпочити на мальовниче озеро Пісочне біля якого, у селі Мельники, розташований Shelter на озерах. Від наших дворівневих апартаментів до озера менше, як 500 метрів.  У наших апартаментах буде комфортно проживати сімом відпочиваючим (додатково можемо розмістити два гостьові місця).</span>
+						</div>
+						<div class="arrowEvents"></div>
+					</div>
+					<div class="imageShelterOnTheLakes imgBlock">
+						<div class="arrowEventsMobile"></div>
+					</div>
+				</a>
+			</div>
+		</article>
+		<article class="caruselWorks container">
+			<div class="glide glidePhotoGalery">
+				<div class="glide__track" data-glide-el="track">
+					<ul class="glide__slides">
+						<li class="glide__slide first">
+							<a href="#" class="linkSlide">
+								<div class="blockImage">
+									<div class="blockHover">
+										<div class="likeImage">51</div>
+										<div class="commentImage">12</div>
+									</div>
+									<div class="fonImage"></div>
+								</div>
+							</a>
+						</li>
+						<li class="glide__slide second">
+							<a href="#" class="linkSlide">
+								<div class="blockImage">
+									<div class="blockHover">
+										<div class="likeImage">32</div>
+										<div class="commentImage">5</div>
+									</div>
+									<div class="fonImage"></div>
+								</div>
+							</a>
+						</li>
+						<li class="glide__slide third">
+							<a href="#" class="linkSlide">
+								<div class="blockImage">
+									<div class="blockHover">
+										<div class="likeImage">115</div>
+										<div class="commentImage">12</div>
+									</div>
+									<div class="fonImage"></div>
+								</div>
+							</a>
+						</li>
+						<li class="glide__slide fourth">
+							<a href="#" class="linkSlide">
+								<div class="blockImage">
+									<div class="blockHover">
+										<div class="likeImage">1374</div>
+										<div class="commentImage">58</div>
+									</div>
+									<div class="fonImage"></div>
+								</div>
+							</a>
+						</li>
+						<li class="glide__slide fifth">
+							<a href="#" class="linkSlide">
+								<div class="blockImage">
+									<div class="blockHover">
+										<div class="likeImage">61</div>
+										<div class="commentImage">2</div>
+									</div>
+									<div class="fonImage"></div>
+								</div>
+							</a>
+						</li>
+						<li class="glide__slide sixth">
+							<a href="#" class="linkSlide ">
+								<div class="blockImage">
+									<div class="blockHover">
+										<div class="likeImage">61</div>
+										<div class="commentImage">2</div>
+									</div>
+									<div class="fonImage"></div>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="mobileInstagram">
+				<ul class="blocksInstagram">
+					<li class="blockInstagramImage first">
+						<a href="#" class="linkSlide">
+							<div class="blockImage">
+								<div class="blockHover">
+									<div class="likeImage">51</div>
+									<div class="commentImage">12</div>
+								</div>
+								<div class="fonImage"></div>
+							</div>
+						</a>
+					</li>
+					<li class="blockInstagramImage second">
+						<a href="#" class="linkSlide">
+							<div class="blockImage">
+								<div class="blockHover">
+									<div class="likeImage">32</div>
+									<div class="commentImage">5</div>
+								</div>
+								<div class="fonImage"></div>
+							</div>
+						</a>
+					</li>
+					<li class="blockInstagramImage third">
+						<a href="#" class="linkSlide">
+							<div class="blockImage">
+								<div class="blockHover">
+									<div class="likeImage">115</div>
+									<div class="commentImage">12</div>
+								</div>
+								<div class="fonImage"></div>
+							</div>
+						</a>
+					</li>
+					<li class="blockInstagramImage fourth">
+						<a href="#" class="linkSlide">
+							<div class="blockImage">
+								<div class="blockHover">
+									<div class="likeImage">1374</div>
+									<div class="commentImage">58</div>
+								</div>
+								<div class="fonImage"></div>
+							</div>
+						</a>
+					</li>
+					<li class="blockInstagramImage fifth">
+						<a href="#" class="linkSlide">
+							<div class="blockImage">
+								<div class="blockHover">
+									<div class="likeImage">61</div>
+									<div class="commentImage">2</div>
+								</div>
+								<div class="fonImage"></div>
+							</div>
+						</a>
+					</li>
+					<li class="blockInstagramImage sixth">
+						<a href="#" class="linkSlide ">
+							<div class="blockImage">
+								<div class="blockHover">
+									<div class="likeImage">61</div>
+									<div class="commentImage">2</div>
+								</div>
+								<div class="fonImage"></div>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<div class="blockLinkInstagram"><a href="#" class="linkInstagram linkInstagramArrow">INSTAGRAM</a></div>
+			</div>
+		</article>
+		<article class="shelterHoliday container">
+			<div class="blockShelterHoliday">
+				<div class="infoShelterHoliday">
+					<h3 class="titleShelterHoliday">ПРИХИСТОК ТВОГО ВІДПОЧИНКУ</h3>
+					<span class="textShelterHoliday">Ми потурбувалися, щоб час, проведений у «Shelter» залишив у пам’яті винятково приємні моменти. Створюючи атмосферу затишку та комфорту, ми працювали над тим, щоб ви хотіли до нас повернутися.</span>
+				</div>
+				<div class="calendarBlock">
+					<form class="tourForm" action="">
+						<div class="blockComponentsForm">
+							<div class="blockTour blockClassRoom">
+								<span class="title">номер</span>
+								<span class="showSelectItem" id="showSelectItem2"></span>
+								<div class="showSelect" id="showSelect2">
+									<ul class="selectList">
+										<li class="selectItem2">Стандарт</li>
+										<li class="selectItem2">Покращений</li>
+										<li class="selectItem2">Двокімнатний люкс</li>
+										<li class="selectItem2">Економ</li>
+										<li class="selectItem2">Сімейний</li>
+									</ul>
+								</div>
+							</div>
+							<div class="blockTour blockArrival">
+								<span class="title" id="titleArrival2">заїзд</span>
+								<span class="showDateArrival" id="showDateArrival2"></span>
+							</div>
+							<div class="blockTour blockDeparture">
+								<span class="title" id="titleDeparture2">виїзд</span>
+								<span class="showDateDeparture" id="showDateDeparture2"></span>
+							</div>
+							<div class="blockTour blockSleepingPlace">
+								<span class="title">спальні місця</span>
+								<div class="sleepingPlace">
+									<input class="checkNumberBed" type="radio" name="sleepingPlace" id="firstBottom">
+									<label class="numberBed" for="firstBottom">1</label>
+									<input class="checkNumberBed" type="radio" name="sleepingPlace" id="secondBottom">
+									<label class="numberBed" for="secondBottom">2</label>
+									<input class="checkNumberBed" type="radio" name="sleepingPlace" id="thirdBottom">
+									<label class="numberBed" for="thirdBottom">3</label>
+									<input class="checkNumberBed" type="radio" name="sleepingPlace" id="fourthBottom">
+									<label class="numberBed" for="fourthBottom">4</label>
+								</div>
+							</div>
+						</div>
+						<div class="showElementBooking" id="showElementBooking2">
+							<div class="showCalendarArrival" id="showCalendarArrival2">
+								<table id="calendar3" class="calendar">
+									<thead>
+										<tr><td><</td><td></td><td colspan="4">></td></tr>
+										<tr><td>Пн</td><td>Вт</td><td>Ср</td><td>Чт</td><td>Пт</td><td>Сб</td><td>Нд</td>
+									</thead>
+									<tbody>
+									</tbody>
+								</table>
+							</div>
+							<div class="showCalendarDeparture" id="showCalendarDeparture2">
+								<table id="calendar4" class="calendar">
+									<thead>
+										<tr><td><</td><td></td><td colspan="4">></td></tr>
+										<tr><td>Пн</td><td>Вт</td><td>Ср</td><td>Чт</td><td>Пт</td><td>Сб</td><td>Нд</td>
+									</thead>
+									<tbody>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</form>
+					<div class="button"><a href="#" class="linkButton">забронювати<span class="textMobile"> номер</span></a></div>
+				</div>
+			</div>
+		</article>
+		<article class="googleMap container">
+			<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10003.61849583877!2d24.788683786397346!3d51.18398079025253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472430f2210e4983%3A0x5dad156121be28d9!2sShelter%20Hotel%20%26%20Restaurant!5e0!3m2!1sru!2sua!4v1596460398623!5m2!1sru!2sua" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		</article>
+	</main>
+	${require('html-loader!./components/footer.html')}
+	<script src="../assets/showElement.js"></script>
+	<script>
+		function selectedArrivalDate() {
+			let monthYearCalendars = document.querySelector('#calendar1>thead>tr:nth-child(1)>td:nth-child(2)')
+			let mount = monthYearCalendars.getAttribute("data-month")
+			let year = monthYearCalendars.getAttribute("data-year")
+			if(window.innerWidth <= 750){
+				showDateArrival.innerHTML = [('0' + event.target.innerHTML).slice(-2), ('0' + (parseInt(mount) + 1)).slice(-2), year.slice(2,4)].join(".");
+			}
+			else {
+				showDateArrival.innerHTML = [('0' + event.target.innerHTML).slice(-2), ('0' + (parseInt(mount) + 1)).slice(-2), year].join(".");
+			}
+			
+			if(document.querySelector('#calendar1 td.selectedDate')){
+				document.querySelector('#calendar1 td.selectedDate').classList.remove('selectedDate')
+			}
+			if(document.querySelector('#calendar1 td.today')){
+				document.querySelector('#calendar1 td.today').classList.remove('today')
+			}
+			if(!event.target.classList.contains('selectedDate')) {
+				event.target.classList.add('selectedDate');
+			}
+			else {
+				event.target.classList.remove('selectedDate');
+			}
+		}
+		function selectedDepartureDate() {
+			let monthYearCalendars = document.querySelector('#calendar2>thead>tr:nth-child(1)>td:nth-child(2)')
+			let mount = monthYearCalendars.getAttribute("data-month");
+			let year = monthYearCalendars.getAttribute("data-year");
+			if(window.innerWidth <= 750){
+				showDateDeparture.innerHTML = [('0' + event.target.innerHTML).slice(-2), ('0' + (parseInt(mount) + 1)).slice(-2), year.slice(2,4)].join(".");
+				console.log('1')
+			}
+			else {
+				showDateDeparture.innerHTML = [('0' + event.target.innerHTML).slice(-2), ('0' + (parseInt(mount) + 1)).slice(-2), year].join(".");
+				console.log('2')
+			}
+			
+			if(document.querySelector('#calendar2 td.selectedDate')){
+				document.querySelector('#calendar2 td.selectedDate').classList.remove('selectedDate')
+			}
+			if(document.querySelector('#calendar2 td.today')){
+				document.querySelector('#calendar2 td.today').classList.remove('today')
+			}
+			if(!event.target.classList.contains('selectedDate')) {
+				event.target.classList.add('selectedDate');
+			}
+			else {
+				event.target.classList.remove('selectedDate');
+			}
+		}
+		function selectedArrivalDate2() {
+			let monthYearCalendars = document.querySelector('#calendar3>thead>tr:nth-child(1)>td:nth-child(2)')
+			let mount = monthYearCalendars.getAttribute("data-month")
+			let year = monthYearCalendars.getAttribute("data-year")
+			if(window.innerWidth <= 750){
+				showDateArrival2.innerHTML = [('0' + event.target.innerHTML).slice(-2), ('0' + (parseInt(mount) + 1)).slice(-2), year.slice(2,4)].join(".");
+			}
+			else {
+				showDateArrival2.innerHTML = [('0' + event.target.innerHTML).slice(-2), ('0' + (parseInt(mount) + 1)).slice(-2), year].join(".");
+			}
+			
+			if(document.querySelector('#calendar3 td.selectedDate')){
+				document.querySelector('#calendar3 td.selectedDate').classList.remove('selectedDate')
+			}
+			if(document.querySelector('#calendar3 td.today')){
+				document.querySelector('#calendar3 td.today').classList.remove('today')
+			}
+			if(!event.target.classList.contains('selectedDate')) {
+				event.target.classList.add('selectedDate');
+			}
+			else {
+				event.target.classList.remove('selectedDate');
+			}
+		}
+		function selectedDepartureDate2() {
+			let monthYearCalendars = document.querySelector('#calendar4>thead>tr:nth-child(1)>td:nth-child(2)')
+			let mount = monthYearCalendars.getAttribute("data-month");
+			let year = monthYearCalendars.getAttribute("data-year");
+			if(window.innerWidth <= 750){
+				showDateDeparture2.innerHTML = [('0' + event.target.innerHTML).slice(-2), ('0' + (parseInt(mount) + 1)).slice(-2), year.slice(2,4)].join(".");
+			}
+			else {
+				showDateDeparture2.innerHTML = [('0' + event.target.innerHTML).slice(-2), ('0' + (parseInt(mount) + 1)).slice(-2), year].join(".");
+			}
+			
+			if(document.querySelector('#calendar4 td.selectedDate')){
+				document.querySelector('#calendar4 td.selectedDate').classList.remove('selectedDate')
+			}
+			if(document.querySelector('#calendar4 td.today')){
+				document.querySelector('#calendar4 td.today').classList.remove('today')
+			}
+			if(!event.target.classList.contains('selectedDate')) {
+				event.target.classList.add('selectedDate');
+			}
+			else {
+				event.target.classList.remove('selectedDate');
+			}
+		}
+	</script>
+</body>
+</html>

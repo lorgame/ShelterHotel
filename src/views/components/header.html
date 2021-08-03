@@ -1,0 +1,81 @@
+<header class="container header">
+  <div class="innerContainer">
+    <a href="/" class="logoHeader"></a>
+    <ul class="menu">
+      <li class="item hotelLinkHeader"><a href="../companyInformation.html" class="link">готель</a></li>
+      <li class="item saunaLinkHeader"><a href="../sauna.html" class="link">сауна</a></li>
+      <li class="item weddingLinkHeader"><a href="../wedding.html" class="link">весілля</a></li>
+      <li class="item conferencesLinkHeader"><a href="../conferences.html" class="link">конференції</a></li>
+      <li class="item networkLinkHeader"><a href="../shelterLakes.html" class="link">мережа</a></li>
+      <li class="item contactLinkHeader"><a href="../contact.html" class="link">контакти</a></li>
+    </ul>
+    <a href="tel:+380500000000" class="itemPhone">+38 (050) 000 00 00</a>
+    <ul class="language line">
+      <li class="itemLanguage"><a href="#" class="link russian">ru</a></li>
+      <li class="itemLanguage"><a href="#" class="link england">en</a></li>
+      <li class="itemLanguage hidden"><a href="#" class="link ukraine">ua</a></li>
+    </ul>
+    <div class="mobileMenuButton" id="mobileMenuButton"></div>
+  </div>
+</header>
+<article class="menu-xs container" id="menuXS">
+  <div class="closeMenuBLock">
+    <div class="borderCloseButton">
+      <a href="#" class="closeMenuButton" id="closeMenuButton"></a>
+    </div>
+  </div>
+  <div class="logoMenuBlock">
+    <a href="index.html" class="logoMenu"></a>
+  </div>
+  <ul class="mobileMenuList">
+    <li class="menuItem"><a href="../companyInformation.html" class="linkItem">готель</a></li>
+    <li class="menuItem"><a href="../sauna.html" class="linkItem">сауна</a></li>
+    <li class="menuItem"><a href="../wedding.html" class="linkItem">весілля</a></li>
+    <li class="menuItem"><a href="../conferences.html" class="linkItem">конференції</a></li>
+    <li class="menuItem"><a href="../shelterLakes.html" class="linkItem">мережа</a></li>
+    <li class="menuItem"><a href="../contact.html" class="linkItem">контакти</a></li>
+  </ul>
+  <div class="messengerBlockFirst">
+    <ul class="messengerList">
+      <li class="messengerItem"><a href="#" class="messengerLink">VIBER</a></li>
+      <li class="messengerItem"><a href="#" class="messengerLink">TELEGRAM</a></li>
+    </ul>
+  </div>
+  <div class="phoneNumberBlock">
+    <a href="tel:+380500000000" class="phoneNumber">+38 (050) 000 00 00</a>
+  </div>
+  <div class="messengerBlockSecond">
+    <ul class="messengerList">
+      <li class="messengerItem"><a href="#" class="messengerLink">FACEBOOK</a></li>
+      <li class="messengerItem"><a href="#" class="messengerLink">INSTAGRAM</a></li>
+    </ul>
+  </div>
+</article>
+<script>
+  let body = document.getElementById('body');
+  let hotel = document.querySelector('.hotelLinkHeader');
+  let wedding = document.querySelector('.weddingLinkHeader');
+  let sauna = document.querySelector('.saunaLinkHeader');
+  let conferences = document.querySelector('.conferencesLinkHeader');
+  let network = document.querySelector('.networkLinkHeader');
+  let contact = document.querySelector('.contactLinkHeader');
+
+  if(body.classList.contains('companyInformationPageSite')) {
+    hotel.classList.add('active')
+  }
+  if(body.classList.contains('saunaPageSite')) {
+    sauna.classList.add('active')
+  }
+  if(body.classList.contains('weddingPageSite')) {
+    wedding.classList.add('active')
+  }
+  if(body.classList.contains('conferencesPageSite')) {
+    conferences.classList.add('active')
+  }
+  if(body.classList.contains('shelterLakesPageSite')) {
+    network.classList.add('active')
+  }
+  if(body.classList.contains('contactPageSite')) {
+    contact.classList.add('active')
+  }
+</script>
